@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/cart.css">
-    <title>cart  page</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/cart.css" />
+    <title>cart page</title>
+  </head>
+  <body>
+
+    <h2>Your Shopping Basket</h2>
+    <div id="Cart_Container">
+      <div class="tableheading">
+        <table>
+          <thead class="carttable">
+            <tr>
+              <th>Item</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div id="subTotal_Div">
+        <p id="subtotal"></p>
+     
+
+        <button id="checkoutBtn">
+          <a
+            href="#"
+            target="_blank"
+            style="color: white; text-decoration: none"
+            >Checkout Now</a
+          >
+        </button>
+    </div>
+    </div>
+
+    <div id="Coupon-div">
+
+
+
+        <p>Got a Promo Code? <a href="#" onclick="showInputbox()" id="spanUsecodeclick">Use it here</a> </p>
+      <form id="formForm">
+        <input id="CouponInput" type="text" placeholder="Enter Your Coupon here" />
+        <input type="submit" value="Apply" />
+      </form>
+
+      <p>Have a Gift Card? Redeem it at checkout.</p>
+
+    </div>
+<div id="Contact_Text">
+    <h2>Need help? We're here for you.</h2>
+    <p>Call Customer Support at 1800-123-1444</p>
+    <p>Write to us</p>
+    <p>Return Policy</p>
+</div>
+
+<div id="bottom_Text">
+    <div> 
+    <h2>Subscribe to our awesome emails.</h2>
+    <p>Get our latest offers and news straight in your inbox.</p>
+    <div> 
+    <input type="text"  id="subscribe_input" placeholder="Please enter an email address">
+    <input type="btn" id="subscribe_btn" value="Subscribe">
+</div>
+</div>
+<div id="appDownload">
+    <h2>Enjoy our amazing apps</h2>
+    <p>Shop our products and offers on-the-go.</p>
+    <div id="getappImg">
+        <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" alt="">
+        <!-- <img src="https://www.edsys.in/wp-content/uploads/Play-Store-Logo-2.png" alt=""> -->
+    </div>
+</div>
+</div>
+
+    </div>
+  </body>
 </html>
+
+<!-- js -->
+
 <script src="/scripts/cart.js"></script>

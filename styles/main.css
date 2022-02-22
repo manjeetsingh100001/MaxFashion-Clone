@@ -116,7 +116,6 @@ li:hover {
 #main-banner-container {
   padding: 100px;
   margin-top: 40px;
- 
 }
 #main-banner-container img {
   height: 550px;
@@ -124,7 +123,15 @@ li:hover {
 }
 #main-banner-container img:hover {
   cursor: pointer;
+
 }
+/* .btn {
+  position: relative;
+  display: none;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+} */
 
 /* ************************************************************************************************************************ */
 /* -----footer- CSS----- */
@@ -167,7 +174,7 @@ div#subscription-container\ flex {
   line-height: 30px;
 }
 .list-down-div {
-    margin-top: 20px;
+  margin-top: 20px;
   justify-content: space-evenly;
   font-size: 14px;
   color: rgb(109, 109, 109);

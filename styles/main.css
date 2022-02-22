@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+.flex {
+  display: flex;
+}
+/* ************************************************************************************************************************ */
+/* -----navigation-bar CSS----- */
+/* ************************************************************************************************************************ */
+.nav {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.black-container .white-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.white-container {
+  background-color: rgb(249, 249, 249);
+}
+.nav .black-container,
+.white-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px 0;
+  transition: all 0.3s ease-in-out;
+}
+.white-left-menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.white-right-menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.black-container {
+  background-color: black;
+  color: white;
+}
+.black-right-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.black-left-menu li {
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.black-container a,
+li:hover {
+  cursor: pointer;
+}
+.white-left-menu li {
+  color: black;
+  text-decoration: none;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.white-right-menu li {
+  color: black;
+  text-decoration: none;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#search {
+  padding: 7px 7px;
+  width: 360px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+}
+.material-icons-outlined {
+  color: black;
+}
+
+/* ************************************************************************************************************************ */
+/* -----women,men,girl,boys-banner CSS----- */
+/* ************************************************************************************************************************ */
+#main-banner-container {
+  padding: 100px;
+  margin-top: 40px;
+ 
+}
+#main-banner-container img {
+  height: 550px;
+  width: 330px;
+}
+#main-banner-container img:hover {
+  cursor: pointer;
+}
+
+/* ************************************************************************************************************************ */
+/* -----footer- CSS----- */
+/* ************************************************************************************************************************ */
+#footerContainer {
+  position: fixed;
+  background-color: rgb(255, 204, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+div#subscription-container\ flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+/* subscribe-form-css  */
+.input-sub-box,
+.btn-sub-box {
+  padding: 10px;
+}
+.input-sub-box {
+  width: 70%;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+.btn-sub-box {
+  background-color: black;
+  color: white;
+}
+/* list of items css  */
+.list-up-div {
+  justify-content: space-around;
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+  line-height: 30px;
+}
+.list-down-div {
+    margin-top: 20px;
+  justify-content: space-evenly;
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+  line-height: 30px;
+}
+.list-container b {
+  color: black;
+}
+.list-container {
+  padding: 50px;
+}
+
+/* footer banner css  */
+#footer-banner-social hr {
+  width: 80%;
+  margin: auto;
+}
+.social {
+  justify-content: space-around;
+  align-items: center;
+}
+.social > i {
+  font-size: 20px;
+}
+
+/* copyright-div-css  */
+#copyright-div {
+  margin-left: 150px;
+  font-size: 13px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}

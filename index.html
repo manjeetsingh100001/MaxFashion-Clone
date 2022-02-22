@@ -1,14 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Home-Page</title>
-</head>
-<body>
-    <h1>hi adi</h1>
-</body>
+  </head>
+
+  <body>
+
+    <nav class="nav">
+      <div class="black-container flex">
+        <!-- for black band menu  -->
+        <ul class="black-left-menu flex">
+          <li><i class="fas fa-truck"></i> Fast Shipping</li>
+          <li><i class="fas fa-undo"></i>Return to store</li>
+          <li><i class="far fa-user"></i>Click & collect</li>
+        </ul>
+        <ul class="black-right-menu flex">
+          <li>
+            <a href="https://www.maxfashion.in/in/en/apps">Download our app</a>
+          </li>
+          <li>
+            <a href="https://www.maxfashion.in/in/en/storelocator"
+              >Store Location</a
+            >
+          </li>
+          <li>
+            <a href="https://helpin.maxfashion.com/support/home#">Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="white-container flex">
+        <ul class="white-left-menu flex">
+          <li><img src="/resources/max.png" alt="max-logo" /></li>
+          <li>Women</li>
+          <li>Men</li>
+          <li>Girls</li>
+          <li>Boys</li>
+          <li>
+            <i class="fa-regular fa-magnifying-glass"></i
+            ><input
+              id="search"
+              type="text"
+              placeholder=" what are you looking for?"
+            />
+          </li>
+        </ul>
+
+        <ul class="white-right-menu flex">
+          <li>Sign Up - Sign In</li>
+          <li>|</li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-bag"></i>Basket</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div id="main-banner-container">
+      <div class="flex">
+        <div class="text-container">
+          <img src="/resources/women.jpg" alt="women-banner" />
+          <!-- <button class="btn">For Women</button> -->
+        </div>
+        <div class="text-container">
+          <img src="/resources/men.jpg" alt="men-banner" />
+          <!-- <button class="btn">For Women</button> -->
+        </div>
+        <div class="text-container">
+          <img src="/resources/girl.jpg" alt="girl-banner" />
+          <!-- <button class="btn">For Women</button> -->
+        </div>
+        <div class="text-container">
+          <img src="/resources/boys.jpg" alt="boys-banner" />
+          <!-- <button class="btn">For Women</button> -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footerContainer ">
+        <hr />
+        <div id="subscription-container flex">
+          <div>
+            <h2>Subscribe to our awesome emails.</h2>
+            <p>Get our latest offers and news straight in your inbox.</p>
+            <input
+              class="input-sub-box"
+              type="text"
+              placeholder="Please enter an email address"
+            />
+            <button class="btn-sub-box">Subscribe</button>
+          </div>
+
+          <div>
+            <h2>Download our apps</h2>
+            <p>Shop our products and offers on-the-go.</p>
+            <span><img src="/resources/app-logo.png" alt="" /></span>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- list of items  -->
+        <div class="list-container">
+          <div class="list-up-div flex">
+            <div>
+              <p><b>Women</b></p>
+              <p>Tops</p>
+              <p>Dresses & Jumpsuits</p>
+              <p>Sportswear</p>
+              <p>Bottoms</p>
+              <p>Winterwear</p>
+              <p>Ethnicwear</p>
+              <p>Lingerie</p>
+              <p>Sleepwear</p>
+              <p>Accessories</p>
+              <p>Shoes</p>
+            </div>
+            <div>
+              <p><b>Men</b></p>
+
+              <p>Tops</p>
+              <p>Bottoms</p>
+              <p>Sportswear</p>
+              <p>Winterwear</p>
+              <p>Accessories</p>
+              <p>Shoes</p>
+            </div>
+            <div>
+              <p><b>Boys</b></p>
+              <p>Tops</p>
+              <p>Bottoms</p>
+              <p>Indian Wear</p>
+              <p>Winter Wear</p>
+              <p>Essentials</p>
+              <p>Accessories</p>
+              <p>Shoes</p>
+            </div>
+            <div>
+              <p><b>Girls</b></p>
+              <p>Tops</p>
+              <p>Bottoms</p>
+              <p>Indian Wear</p>
+              <p>Winter Wear</p>
+              <p>Essentials</p>
+              <p>Accessories</p>
+              <p>Shoes</p>
+            </div>
+            <div>
+              <b>Explore</b>
+              <p>Offers</p>
+              <p>Magazine</p>
+            </div>
+          </div>
+          <div class="list-down-div flex">
+            <div>
+              <b>About</b>
+              <p>About us</p>
+              <p>Write to us</p>
+              <p>Careers</p>
+              <p>Take a Tour</p>
+              <p>Blog</p>
+              <p>Store Locator</p>
+              <p>Landmark Cares</p>
+            </div>
+            <div>
+              <p><b>Help</b></p>
+              <p>Contact us</p>
+              <p>Shipping</p>
+              <p>Returns Process</p>
+              <p>Returns Policy</p>
+              <p>Help Centre</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer-banner-social">
+          <hr />
+          <div class="social flex">
+            <div><img src="/resources/facebook.png" alt="" /></div>
+            <div><img src="/resources/twitter.png" alt="" /></div>
+            <div><img src="/resources/insta.png" alt="" /></div>
+          </div>
+          <hr />
+        </div>
+
+        <div id="copyright-div" class="flex">
+          <img src="/resources/max.png" alt="max-logo" />
+          <p>
+            © 2022 Retail World Limited. <br />
+            Terms & Conditions - Privacy Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 <script src="/scripts/index.js"></script>

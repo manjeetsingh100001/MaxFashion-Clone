@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menspage.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div  id="zeus"></div>
+
+</body>
+</html>
+<script>
+let data=JSON.parse(localStorage.getItem("menslocaldata"))
+var cartarr=localStorage.getItem("cartproducts")||[]
+
+data.forEach((elem) => {
+  let div=document.createElement("div")
+  div.setAttribute("id","cartview")
+   let div1=document.createElement("div")
+   div1.setAttribute("class","container")
+   let image=document.createElement("img")
+   image.src=elem.image_url
+   let button=document.createElement("button")
+   button.textContent="ADD TO BASKET"
+   button.setAttribute("class","btn")
+   button.addEventListener("click",function(){
+       cart(elem)
+   })
+   div1.append(image,button)
+   let div2=document.createElement("div")
+   div2.setAttribute("class","pricediv")
+   let p1=document.createElement("h4")
+   p1.textContent=elem.Symbol+elem.price
+   let p2=document.createElement("h4")
+   p2.textContent=elem.Symbol+elem.strikedoffprice
+   p2.style.textDecoration="line-through"
+   div2.append(p1,p2)
+   let div3=document.createElement("div")
+   let h5=document.createElement("p")
+   h5.textContent=elem.category
+   div3.append(h5)
+   div.append(div1,div2,div3)
+   document.querySelector("#zeus").append(div)
+});
+function cart(elem){
+    cartarr.push(elem)
+    localStorage.setItem("cartproducts",JSON.stringify(cartarr))
+}
+
+// var x=document.querySelector("#cartview")
+// x.addEventListener("mouseover",focuson)
+// x.addEventListener("dblclick",focusout)
+// function focuson(){
+//     document.getElementById("cartview").innerHTML=""
+//     var div=document.createElement("div")
+//     var button=document.createElement("button")
+//     button.textContent="ADD TO BASKET"
+//     button.style.backgroundColor="blue"
+//     button.style.color="White"
+//     div.append(button)
+//     document.getElementById("cartview").append(div)
+// }
+// function focusout(){
+//     document.getElementById("cartview").innerHTML=max(data)
+// }
+</script>

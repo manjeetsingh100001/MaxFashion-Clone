@@ -1,0 +1,52 @@
+#zeus{
+    width: auto;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: space-around;
+    grid-gap: 10px;
+}
+img{
+    width: 270px;
+    height: 300px;
+}
+.pricediv{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: red;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .container>img {
+    width: 100%;
+    height: auto;
+  }
+  .btn{
+      opacity: 0;
+  }
+  .container>.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+    opacity: 1;;
+  }

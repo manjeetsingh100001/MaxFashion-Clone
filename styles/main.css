@@ -106,8 +106,47 @@ li:hover {
   border: none;
   background-color: rgb(236, 236, 236);
 }
-.material-icons-outlined {
-  color: black;
+/*sign up - sign in div css*/
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.white_content {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+}
+#signUp-form-div > form input {
+  width: 80%;
+  margin-top: 5px;
+  
+}
+#signUp-form-div{
+  text-align: center;
 }
 
 /* ************************************************************************************************************************ */
@@ -143,6 +182,11 @@ li:hover {
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+}
+footer  hr {
+  width: 85%;
+  margin: auto;
+  border: 1px solid rgb(235, 235, 235);
 }
 div#subscription-container\ flex {
   display: flex;
@@ -188,10 +232,6 @@ div#subscription-container\ flex {
 }
 
 /* footer banner css  */
-#footer-banner-social hr {
-  width: 80%;
-  margin: auto;
-}
 .social {
   justify-content: space-around;
   align-items: center;

@@ -153,7 +153,7 @@ function displayData(women_kurti){
 
     basket.innerText = "ADD TO BASKET";
     basket.onclick = () =>{
-        localStorage.setItem("cart_product",JSON.stringify(data));
+        localStorage.setItem("single_kurti",JSON.stringify(data));
         alert("Added to cart");
 
         //basket counter update function to write here. 
@@ -168,7 +168,7 @@ function displayData(women_kurti){
 
     div.onclick = () => {
       localStorage.setItem("single_kurti", JSON.stringify(data));
-      window.location.href = "product_women.html";
+      window.location.href = "single_product_women.html";
     };
 
        container.append(div2);

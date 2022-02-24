@@ -171,13 +171,16 @@
       let basket = document.createElement("button");
       basket.setAttribute("id", "basket");
       basket.innerText = "ADD TO BASKET";
-      //  basket.onclick=() =>{
-      //      localStorage.setItem("single_kurti", JSON.stringify(el))
-      //  }
+       basket.onclick=() =>{
+           localStorage.setItem("single_kurti", JSON.stringify(el))
+       }
 
       let favourite = document.createElement("button");
       favourite.innerHTML = `&#10084 Add to Favourites`;
       favourite.setAttribute("id", "favourite");
+      favourite.onclick=() =>{
+        localStorage.setItem("wishlist", JSON.stringify(el))
+      }
 
       let promotion = document.createElement("button");
       promotion.setAttribute("id", "promotion");

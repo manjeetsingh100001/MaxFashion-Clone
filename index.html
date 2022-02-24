@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Home-Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/498dbb26da.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/styles/main.css" />
-  <title>Home-Page</title>
-</head>
+  <body>
+    <nav class="nav">
+      <div class="black-container flex">
+        <!-- for black band menu  -->
+        <ul class="black-left-menu flex">
+          <li><i class="fas fa-truck"></i> Fast Shipping</li>
+          <li><i class="fas fa-undo"></i>Return to store</li>
+          <li><i class="far fa-user"></i>Click & collect</li>
+        </ul>
+        <ul class="black-right-menu flex">
+          <li>
+            <a href="https://www.maxfashion.in/in/en/apps">Download our app</a>
+          </li>
+          <li>
+            <a href="https://www.maxfashion.in/in/en/storelocator"
+              >Store Location</a
+            >
+          </li>
+          <li>
+            <a href="https://helpin.maxfashion.com/support/home#">Help</a>
+          </li>
+        </ul>
+      </div>
 
-<body>
-  <nav class="nav">
-    <div class="black-container flex">
-      <!-- for black band menu  -->
-      <ul class="black-left-menu flex">
-        <li><i class="fas fa-truck"></i> Fast Shipping</li>
-        <li><i class="fas fa-undo"></i>Return to store</li>
-        <li><i class="far fa-user"></i>Click & collect</li>
-      </ul>
-      <ul class="black-right-menu flex">
-        <li>
-          <a href="https://www.maxfashion.in/in/en/apps">Download our app</a>
-        </li>
-        <li>
-          <a href="https://www.maxfashion.in/in/en/storelocator">Store Location</a>
-        </li>
-        <li>
-          <a href="https://helpin.maxfashion.com/support/home#">Help</a>
-        </li>
-      </ul>
-    </div>
+      <div class="white-container flex">
+        <ul class="white-left-menu flex">
+          <li>
+            <a href="/index.html"
+              ><img src="/resources/max.png" alt="max-logo"
+            /></a>
+          </li>
+          <li><a href="/womens.html">Women</a></li>
+          <li><a href="/men.html">Men</a></li>
+          <li></li>
+          <li><a href="#">Girls</a></li>
+          <li><a href="#">Boys</a></li>
+          <li>
+            <i class="fa-regular fa-magnifying-glass"></i
+            ><input
+              id="search"
+              type="text"
+              placeholder=" what are you looking for?"
+            />
+          </li>
+        </ul>
 
-    <div class="white-container flex">
-      <ul class="white-left-menu flex">
-        <li>
-          <a href="/index.html"><img src="/resources/max.png" alt="max-logo" /></a>
-        </li>
-        <li><a href="/womens.html">Women</a></li>
-        <li><a href="/men.html">Men</a></li>
-        <li></li>
-        <li><a href="#">Girls</a></li>
-        <li><a href="#">Boys</a></li>
-        <li>
-          <i class="fa-regular fa-magnifying-glass"></i><input id="search" type="text"
-            placeholder=" what are you looking for?" />
-        </li>
-      </ul>
+        <ul class="white-right-menu flex">
+          <li>
+            <p>
+              <a href="#">SignUp</a>
+            </p>
+          </li>
+          <li>|</li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-bag"></i>Basket</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <ul class="white-right-menu flex">
-        <li>
-          <p>
-            <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';
-            document.getElementById('fade').style.display='block'">SignUp</a>
-          </p>
-        </li>
-        <li>|</li>
-        <li>
-          <a href="#"><i class="fas fa-shopping-bag"></i>Basket</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- signup pop-up div -->
+    <!-- signup pop-up div
   <div id="light" class="white_content">
 
     <div class="close-btn">
@@ -94,50 +106,26 @@
       <button onclick="Register()">Register</button>
     </div>
   </div>
-  <div id="fade" class="black_overlay"></div>
+  <div id="fade" class="black_overlay"></div> -->
 
+    <!--importing banner for mens women boys girls  -->
+    <div id="banner_container"></div>
 
-
-
-
-
-
-  <!-- banner for mens women boys girls  -->
-  <div id="main-banner-container">
-    <div class="flex">
-      <div class="text-container">
-        <img src="/resources/women.jpg" alt="women-banner" />
-        <!-- <button class="btn">For Women</button> -->
-      </div>
-      <div class="text-container">
-        <img src="/resources/men.jpg" alt="men-banner" />
-        <!-- <button class="btn">For Women</button> -->
-      </div>
-      <div class="text-container">
-        <img src="/resources/girl.jpg" alt="girl-banner" />
-        <!-- <button class="btn">For Women</button> -->
-      </div>
-      <div class="text-container">
-        <img src="/resources/boys.jpg" alt="boys-banner" />
-        <!-- <button class="btn">For Women</button> -->
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- footer  main  section  -->
-  <div id="footer_container"></div>
-  
-</body>
-
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
+  </body>
 </html>
 
 <script src="/scripts/index.js"></script>
 
 <script type="module">
-  // importing footer 
+  // importing footer
   import footer from "./components/footer.js";
   let footer_container = document.getElementById("footer_container");
   footer_container.innerHTML = footer();
+
+  import banner from "./components/banner.js";
+  let banner_container = document.getElementById("banner_container");
+  banner_container.innerHTML = banner();
+
 </script>

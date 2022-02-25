@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurti page</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/womens_kurti.css">
+    
+  </head>
+  <body>
+
+    
+    <h1>Kurtas & Kurtis</h1>
+    <select id="sortPriced" onchange="sortbyprice()">
+        <option value="">Sort by Price</option>
+        <option value="default">Default</option>
+        <option value="Low">Low to High</option>
+        <option value="High">High to Low</option>
+        
+    </select>
+    <div id="kurti_append"></div>
+
+  </body>
+</html>
+
+<script src="./data/womensData.js"></script>
+<script src="./scripts/women_kurti.js">
+ 
+</script>

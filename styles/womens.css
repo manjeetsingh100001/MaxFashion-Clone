@@ -97,3 +97,10 @@ a > img{
 #gift > img{
     margin-left: 50px;
 }
+
+
+
+#slideshow > img {
+    /* width: 50%; */
+    height: 100%;
+  }

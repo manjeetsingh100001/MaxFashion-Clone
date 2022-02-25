@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700;900&display=swap");
+body{
+  font-family: "Roboto",sans-serif;
+}
+#zeus{
+  width: 1300px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(4,20%);
+  justify-content: space-around;
+  gap: 10px;
+}
+img{
+  width: 280px;
+  height: 290px;
+}
+#hideseek{
+  display: none;
+  height: 100%;
+}
+#basketbutton{
+  height: 50px;
+}
+#maindiv:hover #hideseek{
+  background-color: rgb(10, 10, 109);
+  display: block;
+  border: none;
+  width: 280px;
+  height: 100%;
+  color: white;
+}
+#maindiv:hover{
+  border: 1px solid silver;
+  width: 280px;
+}
+
+#detail{
+  display: flex;
+}
+#dadda{
+  width: 800px;
+}
+#dadda>img{
+  width: 750px;
+  height: 580px;
+}
+#pappa{
+  width:450px
+}
+#smallimage{
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(10,10,109);
+}
+#sizebox{
+  display: flex;
+  justify-content: space-between;
+}
+#sizebutton{
+  background-color: rgb(10, 10, 109);
+  color: white;
+  padding:10px 80px 10px 80px;
+  border: none;
+  margin-left: 20px;
+}
+#buttondiv{
+  width: 350px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+#sizebutton2{
+  background-color: red;
+  color: white;
+  padding:10px 80px 10px 80px;
+  border: none;
+}
+#detail>#fav{
+  margin-top: 20px;
+}
+.sizepart{
+  border: 1px solid grey;
+  
+  padding: 8px;
+}
+.sizepart:hover{
+  background-color: aqua;
+}
+.firstheading{
+  margin-left: 43px;
+}
+#homepage1{
+  width: 1200px;
+display: grid;
+grid-template-columns: repeat(6,202px);
+grid-gap: 10px;
+margin-left: 43px;
+}
+#homeicon1{
+width: 182px;
+height: 194px;
+grid-gap: 10px;
+}
+#shopby{
+margin-left: 45px;
+}
+#headerimages{
+  width: 100%;
+  height: 450px;
+}
+

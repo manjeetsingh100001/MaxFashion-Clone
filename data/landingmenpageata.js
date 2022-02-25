@@ -1,0 +1,347 @@
+
+  var menspage= [
+      {
+        id:0,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010273780-Red-RED-1000010273780-29122021_01-2100.jpg",
+        name: "MEN'S PALM ANGLES TRACK JACKET",
+        brand: "PALM ANGLE",
+        category: "Max Printed shirt",
+        Symbol: "₹",
+        price: 745,
+        strikedoffprice: 2599,
+      },
+      {
+        id:1,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010373162-Pink-Pink-1000010373162-9152021_01-2100.jpg",
+        name: "MEN'S HERON PRESTON T-SHIRT ",
+        brand: "HERON PRESTON",
+        category: "Max Printed shirt alzaba",
+        price: 445,
+        strikedoffprice: 999,
+        Symbol: "₹",
+      },
+      {
+        id:2,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829364-Black-BLACK-1000010829364-5012022_01-2100.jpg",
+        name: " Wales Bonner Power geometric-print trousers",
+        brand: "WALES BONNER",
+        category: "Max Printed shirt censtor",
+        price: 801,
+        strikedoffprice: 1099,
+        Symbol: "₹",
+      },
+      {
+        id:3,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010665310-Green-GREEN-1000010665310-8122021_01-2100.jpg",
+        name: "Alexander McQueen intarsia-pattern cardigan",
+        brand: "WALES BONNER",
+        category: "Max Printed shirt Ultrasleem",
+        price: 399,
+        strikedoffprice: 799,
+        Symbol: "₹",
+      },
+      {
+        id:4,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010976724-White-WHITE-1000010976724-5012022_01-2100.jpg",
+        name: "JW Anderson x Pol Anglada appliqué-logo shirt ",
+        brand: "PALM ANGLE",
+        price: 1620,
+        strikedoffprice: 3599,
+        category: "Max Printed shirt liner",
+        Symbol: "₹",
+      },
+      {
+        id:5,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010861398-Black-BLACK-1000010861398-3012022_01-2100.jpg",
+        name: " Marni herringbone-effect jacket ",
+        brand: "WALES BONNER",
+        price: 1440,
+        strikedoffprice: 3199,
+        category: "Max Printed shirt joshno",
+        Symbol: "₹",
+      },
+      {
+        id:6,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010252152-Blue-Navy-1000010252152-7222021_01-2100.jpg",
+        name: " MEN'S Gervon check-print overshirt ",
+        brand: "WALES BONNER",
+        price: 1999,
+        strikedoffprice: 3199,
+        category: "Max Printed shirt yinsto",
+        Symbol: "₹",
+      },
+      {
+        id:7,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010865114-Red-MAROON-1000010865114-29122021_01-2100.jpg",
+        name: "MEN'S REEBOK TRAINING  POLO T-SHIRTS TEE  ",
+        brand: "REEBOK",
+        price: 769,
+        strikedoffprice: 1099,
+        category: "Max Printed shirt harry",
+        Symbol: "₹",
+      },
+      {
+        id:8,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010273499-Black-BLACK-1000010273499-5012022_01-2100.jpg",
+        name: "Medusa plaque slim-fit jeans ",
+        brand: "PALM ANGLE",
+        price: 1299,
+        strikedoffprice: 1440,
+        category: "Max Printed shirt Mexican",
+        Symbol: "₹",
+      },
+      {
+        id:9,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010482067-White-WHITE-1000010482067-22122021_01-2100.jpg ",
+        name: "Marni cropped tailored trousers",
+        brand: "HERON PRESTON",
+        price:699,
+        strikedoffprice: 999,
+        category: "Max Printed shirt newbee",
+        Symbol: "₹",
+      },
+      {
+        id:10,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010273728-Green-GREEN-1000010273728-22122021_01-2100.jpg ",
+        name: "Off-White Arrows intarsia-knit jumper",
+        brand: "HERON PRESTON",
+        category: "Max Printed shirt honzor",
+        price: 1620,
+        strikedoffprice: 3599,
+        Symbol: "₹",
+      },
+      {
+        id:11,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010665335-Yellow-Yellow-1000010665335-11302021_01-2100.jpg ",
+        name: " Balenciaga Phantom low-top sneakers",
+        brand: "BALENCIAGA",
+        category: "Max Printed shirt clever",
+        price: 1620,
+        strikedoffprice: 3599,
+        Symbol: "₹",
+      },
+      {
+        id:12,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010373175-Grey-Grey-1000010373175-8052021_01-2100.jpg",
+        name: "Brunello Cucinelli lace-up suede boots ",
+        brand: "BALENCIAGA",
+        category: "Max Printed shirt alzaba studd",
+        price: 599,
+        strikedoffprice: 999,
+        Symbol: "₹",
+      },
+      {
+        id:13,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010861601-Pink-PINK-1000010861601-29122021_01-2100.jpg ",
+        name: " MEN'S REEBOK RUNNING RUNNER SHOES",
+        brand: "REEBOK",
+        category: "Max Printed shirt simple",
+        price: 1575,
+        strikedoffprice: 3499,
+        Symbol: "₹",
+      },
+      {
+        id:14,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010911289-Yellow-YELLOW-1000010911289-22122021_01-2100.jpg ",
+        name: "Palm Angels palm tree high-top sneakers ",
+        brand: "PALM ANGLE",
+        category: "Max Printed shirt manchester",
+        price: 9999,
+        strikedoffprice: 12000,
+        Symbol: "₹",
+      },
+      {
+        id:15,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010861461-Green-GREEN-1000010861461-5012022_01-2100.jpg",
+        name: " Off-White Arrows leather-trim backpack",
+        brand: "OFF WHITE",
+        category: "Max Printed shirt bisrto",
+        price: 779,
+        strikedoffprice: 1299,
+        Symbol: "₹",
+      },
+      {
+        id:16,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829273-White-WHITE-1000010829273-29122021_01-2100.jpg",
+        name: "MEN'S REEBOK TRAINING FOUNDATION  PANTS  ",
+        brand: "REEBOK",
+        category: "Max Printed shirt albaba",
+        price: 1019,
+        strikedoffprice: 1699,
+        Symbol: "₹",
+      },
+      {
+        id:17,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010861373-Blue-NAVY-1000010861373-3012022_01-2100.jpg",
+        name: "MEN'S REEBOK TRAINING FOUNDATION PANTS  ",
+        brand: "REEBOK",
+        category: "Max Printed shirt huizene",
+        price: 1019,
+        strikedoffprice: 1699,
+        Symbol: "₹",
+      },
+      {
+        id:18,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010911314-Beige-BEIGE-1000010911314-22122021_01-2100.jpg",
+        name: "Palm Angels slogan-print tote bag ",
+        brand: "PALM ANGLE",
+        category: "Max Printed shirt young",
+        price: 1575,
+        strikedoffprice: 3499,
+        Symbol: "₹",
+      },
+      {
+        id:19,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010273767-Blue-Navy-1000010273767-9222021_01-2100.jpg ",
+        name: "  MEN'S REEBOK RUNNING ZTAUR RUN SHOES ",
+        brand: "REEBOK",
+        category: "Max Printed shirt hokhoi",
+        price: 3449,
+        strikedoffprice: 4999,
+        Symbol: "₹",
+      },
+      {
+        id:20,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010911339-Yellow-YELLOW-1000010911339-5012022_01-2100.jpg",
+        name: "MAD Paris MAD EMERALDS DAYTONA",
+        brand: "MAD PARIS",
+        category: "Max Printed shirt cool",
+        price: 749,
+        strikedoffprice: 1499,
+        Symbol: "₹",
+      },
+      {
+        id:21,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010864879-Red-RED-1000010864879-2022022_01-2100.jpg",
+        name: "MAD Paris Nobile quartz 43mm",
+        brand: "MAD PARIS",
+        category: "Max Printed shirt summer",
+        price: 1149,
+        strikedoffprice: 2299,
+        Symbol: "₹",
+      },
+      {
+        id:22,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829582-Green-GREEN-1000010829582-8122021_01-2100.jpg",
+        name: " MEN'S REEBOK RUNNING GENESIS RUNNER SHOE  ",
+        brand: "REEBOK",
+        category: "Max Printed shirt summer special",
+        price: 1620,
+        strikedoffprice: 3599,
+        Symbol: "₹",
+      },
+      {
+        id:23,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829247-Black-BLACK-1000010829247-12012022_01-2100.jpg",
+        name: "UNISEX REEBOK CLASSICS  BASKETBALL SHOES",
+        brand: "REEBOK",
+        category: "Max Printed shirt sniper",
+        price: 3919,
+        strikedoffprice: 5599,
+        Symbol: "₹",
+      },
+      {
+        id:24,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829634-Red-RED-1000010829634-22122021_01-2100.jpg",
+        name: " Gucci Eyewear aviator-frame sunglasses ",
+        brand: "GUCCI",
+        category: "Max Printed shirt Avenger",
+        price: 2779,
+        strikedoffprice: 4299,
+        Symbol: "₹",
+      },
+      {
+        id:25,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829544-Brown-BROWN-1000010829544-29122021_01-2100.jpg",
+        name: "Gucci Eyewear aviator-frame sunglasses",
+        brand: "GUCCI",
+        category: "Max Printed shirt Moblio",
+        price: 3490,
+        strikedoffprice: 4999,
+        Symbol: "₹",
+      },
+      {
+        id:26,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010577993-Blue-Navy-1000010577993-8272021_01-2100.jpg",
+        name: "Gucci Strawberry Gucci print T-shirt ",
+        brand: "GUCCI",
+        category: "Max Printed shirt Zest",
+        price: 3499,
+        strikedoffprice: 4999,
+        Symbol: "₹",
+      },
+      {
+        id:27,
+        image_url:
+          " https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010849064-Brown-BROWN-1000010849064-8122021_01-2100.jpg",
+        name: "Gucci bleach-effect tapered-leg denim jeans",
+        brand: "GUCCI",
+        category: "Max Printed shirt Kwid",
+        price: 1399,
+        strikedoffprice: 2799,
+        Symbol: "₹",
+      },
+      {
+        id:28,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010942090-Blue-BLUE-1000010942090-22122021_01-2100.jpg",
+        name: "Gucci Ace GG Supreme sneaker",
+        brand: "GUCCI",
+        category: "Max Printed shirt Tiago",
+        price: 1575,
+        strikedoffprice: 3499,
+        Symbol: "₹",
+      },
+      {
+        id:29,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010829234-Green-GREEN-1000010829234-29122021_01-2100.jpg",
+        name: "MEN'S REEBOK TRAINING BASIC POLO TEE",
+        brand: "REEBOK",
+        category: "Max Printed shirt scholar",
+        price: 779,
+        strikedoffprice: 1299,
+        Symbol: "₹",
+      },
+      {
+        id:30,
+        image_url:
+          "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010482067-Black-BLACK-1000010482067-22122021_01-2100.jpg",
+        name: "Max Printed shirt print hoodie",
+        brand: "GUCCI",
+        category: "SHOES",
+        price: 1620,
+        strikedoffprice: 3599,
+        Symbol: "₹",
+      },
+    ]
+
+   localStorage.setItem("mensdata", JSON.stringify(menspage));
+

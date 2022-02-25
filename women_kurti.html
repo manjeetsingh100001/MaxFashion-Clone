@@ -6,67 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kurti page</title>
     <link rel="stylesheet" href="/styles/main.css" />
-    <style>
-      #kurti_append {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-      }
-      #post {
-        /* border: 1px solid red; */
-        width: 300px;
-        height: 400px;
-        margin-left: 13px;
-      }
-      #post > #womimg {
-        width: 100%;
-        height: 300px;
-        
-      }
-      .hide {
-        display: none;
-        height: 100%;
-      
-      }
-   
-     #div2:hover{
-        border: 1px solid silver;
-        width:100%;
-        
-
-     }
-
-      #div2:hover  .hide {
-        /* width:50px;
-            height: 50px; */
-        /* border: 1px solid red; */
-        display: block;
-        background-color:#303ab2;
-        color: white;
-        width: 100%;
-        height: 100%;
-        font-weight: bold;
-        border: 0;
-      }
-      #basket_div{
-          /* border: 1px solid red; */
-          height: 50px;
-      }
-      #favourite{
-          /* margin-top:20px; */
-          height:2px;
-          border:none;
-          background-color:white;
-      }
-      #sortPriced{
-          width:200px;
-          height:50px;
-          /* align-items:end; */
-          margin-left: 1130px;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/womens_kurti.css">
+    
   </head>
   <body>
+
+    
     <h1>Kurtas & Kurtis</h1>
     <select id="sortPriced" onchange="sortbyprice()">
         <option value="">Sort by Price</option>
@@ -81,99 +26,6 @@
 </html>
 
 <script src="./data/womensData.js"></script>
-<script>
-  var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
-  displayData(women_kurti);   //calling the display function.
-   console.log("women_kurti:",women_kurti);
-
-   // sorting 
-   function sortbyprice() {
-       let select=document.getElementById("sortPriced");
-       if(select.value=="Low") {
-             women_kurti.sort(function(a,b){return a.price - b.price;});
-       }
-       if(select.value=="High") {
-             women_kurti.sort(function(a,b){return b.price - a.price;});
-       }
-    //    if(select.value=="default")
-    //    {
-    //        women_kurti.sort(function(){return women_kurti})
-    //     // displayData(women_kurti);
-    //    }
-
-       displayData(women_kurti);
-       console.log("women_kurti:",women_kurti);
-
-   }
-
-   
-
-function displayData(women_kurti){
-
-    //appending the product image to the container element.
-  let container = document.getElementById("kurti_append");
-  container.innerHTML = null;
-
-
-  women_kurti.map((data) => {
-
-           
-    let div = document.createElement("div");
-    div.setAttribute("id", "post");
-   
-
-    let image = document.createElement("img");
-    image.src = data.image_url;
-    image.setAttribute("id", "womimg");
-
-    let price = document.createElement("h4");
-    price.innerHTML = ` &#x20B9 ${data.price}`;
-
-    let title = document.createElement("p");
-    title.innerText = data.name;
-
-    // favourite button 
-    let favourite= document.createElement("button");
-    favourite.innerHTML =`&#10084`;
-    favourite.setAttribute("id", "favourite")
-    favourite.onclick = ()=>{
-        //add to favorites list function to written.
-    }
-
-    // add to basket button creation.//
-    let div2=document.createElement("div");
-    div2.id="div2";
-    
-
-    let basket_div= document.createElement("div");
-     basket_div.setAttribute("id", "basket_div");
-
-    let basket = document.createElement("button");
-    basket.setAttribute("class", "hide");
-
-    basket.innerText = "ADD TO BASKET";
-    basket.onclick = () =>{
-        localStorage.setItem("single_kurti",JSON.stringify(data));
-        alert("Added to cart");
-
-        //basket counter update function to write here. 
-    }
-
-    basket_div.append(basket);
-    
-    
-    div.append(favourite,image,price,title);
-
-    div2.append(div,basket_div);
-
-    div.onclick = () => {
-      localStorage.setItem("single_kurti", JSON.stringify(data));
-      window.location.href = "single_product_women.html";
-    };
-
-       container.append(div2);
-  });
-  console.log("women_kurti:",women_kurti);
-
-}
+<script src="./scripts/women_kurti.js">
+ 
 </script>

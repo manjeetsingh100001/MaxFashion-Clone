@@ -24,10 +24,10 @@
     margin-top: 80px;
 }
 .cattitle{
-    font-weight:none;
+    font-weight:bold;
     font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 26px;
-    margin:20px
+    margin:20px;
 }
 #cartdetail{
     display: flex;
@@ -84,3 +84,16 @@ a > img{
   a:active {
     text-decoration: none;
   }
+  #gift{
+      margin-top: 50px;
+  }
+#gift > h3 {
+    font-weight: bold;
+    font-size:40px;
+    font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin:20px;
+    margin-left:50px ;
+}
+#gift > img{
+    margin-left: 50px;
+}

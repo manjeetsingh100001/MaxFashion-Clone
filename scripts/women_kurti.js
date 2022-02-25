@@ -1,6 +1,6 @@
 var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
 displayData(women_kurti);   //calling the display function.
- console.log("women_kurti:",women_kurti);
+console.log("women_kurti:",women_kurti);
 
  // sorting 
  function sortbyprice() {
@@ -50,7 +50,7 @@ women_kurti.map((data) => {
 
   // favourite button 
   let favourite= document.createElement("button");
-  favourite.innerHTML =`&#10084`;
+  favourite.innerHTML =`&#10084`;  
   favourite.setAttribute("id", "favourite")
   favourite.onclick = ()=>{
       //add to favorites list function to written.
@@ -67,7 +67,7 @@ women_kurti.map((data) => {
   let basket = document.createElement("button");
   basket.setAttribute("class", "hide");
 
-  basket.innerText = "ADD TO BASKET";
+  basket.textContent = "ADD TO BASKET";
   basket.onclick = () =>{
       localStorage.setItem("single_kurti",JSON.stringify(data));
       alert("Added to cart");

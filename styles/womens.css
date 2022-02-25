@@ -1,106 +1,72 @@
-#container{
-    margin: 10px 15px 0px 15px;
+#container {
+  padding: 0px 100px 0px 100px;
+}
+/* for slideshow css  */
+#slideshow {
+  width: 100%;
+  border: 1px solid red transparent;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#party {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
+.cattitle {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 20px;
+}
 
-#slideshow{
-    width:100%;
-    height: 400px;
-    /* border: 1px solid red; */
-    margin-bottom: 80px;
-    margin-left: 60px;
+/* css for catagories  */
+#content {
+  height: 600px;
+  width: 100%;
 }
-#party{
-    width:95%;
-    height: 300px;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
-    margin-top:100px;
+#content > div {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: space-around;
+  text-align: justify;
+  text-align: center;
 }
-#offer{
-    width: 95%;
-    height: 180px;
-    margin-top: 80px;
+#content  p{
+    font-size: 18px;
+  font-weight: 500;
 }
-.cattitle{
-    font-weight:bold;
-    font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 26px;
-    margin:20px;
+.wcat > img {
+  width: 200px;
+  height: 200px;
 }
-#cartdetail{
-    display: flex;
-    /* border: 1px solid red; */
-    width: 95%;
-    height:100px;
 
+/* offer div  */
+#offer {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-#catdetail{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#offer > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* #cardetail> div{
-  margin: 30px;;
-} */
-.wcat > img{
-   width:200px;
-   height: 200px;
-   /* //border: 1px solid; */
-}
-.wcat >h3{
-    text-align: center;
-}
-a > img{
-    width:200px;
-    height: 200px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    /* //border: 1px solid; */
- }
- a > h3{
-     color: black;
-    text-decoration: none;
-     margin-left: 10px;
-     margin-bottom: 15px;
- }
- #kurti{
-     margin-bottom: 20px;
- }
 
-  a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    text-decoration: none;
-  }
-  #gift{
-      margin-top: 50px;
-  }
+/* gift div  */
+#gift {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 #gift > h3 {
-    font-weight: bold;
-    font-size:40px;
-    font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin:20px;
-    margin-left:50px ;
+  font-weight: bold;
+  font-size: 40px;
 }
-#gift > img{
-    margin-left: 50px;
+#gift > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-
-#slideshow > img {
-    /* width: 50%; */
-    height: 100%;
-  }

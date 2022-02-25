@@ -212,3 +212,110 @@ div#subscription-container\ flex {
   margin-bottom: 30px;
   margin-top: 20px;
 }
+
+
+/* Css part for SignUp pop-Up div  */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+.model{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 650px;
+  max-width: 80%;
+}
+.model.active{
+transform: translate(-50%, -50%) scale(1);
+}
+
+.model-header{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.model-header .title{
+  font-size:  1.25rem;
+  font-weight: bold;
+}
+
+.model-header  .close-botton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.model-body{
+  padding:  15px 25px;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+#signUp-form-div {
+  padding: 10px;
+}
+#signUp-form-div input {
+  margin-left: 5px;
+  width: 95%;
+  padding: 7px;
+  margin-top: 5px;
+  border: 2px solid rgb(2, 3, 99);
+}
+
+#register{
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(0, 0, 131);
+  color: #fff;
+  width: 80%;
+
+}
+
+#logIn-form-div{
+  padding: 24px;
+}
+
+#logIn-form-div input {
+  margin-left: 5px;
+  width: 95%;
+  padding: 7px;
+  margin-top: 5px;
+  border: 2px solid rgb(2, 3, 99);
+}
+
+#register{
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(0, 0, 131);
+  color: #fff;
+  width: 80%;
+
+}

@@ -17,96 +17,8 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <div class="black-container flex">
-        <!-- for black band menu  -->
-        <ul class="black-left-menu flex">
-          <li><i class="fas fa-truck"></i> Fast Shipping</li>
-          <li><i class="fas fa-undo"></i>Return to store</li>
-          <li><i class="far fa-user"></i>Click & collect</li>
-        </ul>
-        <ul class="black-right-menu flex">
-          <li>
-            <a href="https://www.maxfashion.in/in/en/apps">Download our app</a>
-          </li>
-          <li>
-            <a href="https://www.maxfashion.in/in/en/storelocator"
-              >Store Location</a
-            >
-          </li>
-          <li>
-            <a href="https://helpin.maxfashion.com/support/home#">Help</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="white-container flex">
-        <ul class="white-left-menu flex">
-          <li>
-            <a href="/index.html"
-              ><img src="/resources/max.png" alt="max-logo"
-            /></a>
-          </li>
-          <li><a href="/womens.html">Women</a></li>
-          <li><a href="/men.html">Men</a></li>
-          <li></li>
-          <li><a href="#">Girls</a></li>
-          <li><a href="#">Boys</a></li>
-          <li>
-            <i class="fa-regular fa-magnifying-glass"></i
-            ><input
-              id="search"
-              type="text"
-              placeholder=" what are you looking for?"
-            />
-          </li>
-        </ul>
-
-        <ul class="white-right-menu flex">
-          <li>
-            <p>
-              <a href="#">SignUp</a>
-            </p>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="#"><i class="fas fa-shopping-bag"></i>Basket</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- signup pop-up div
-  <div id="light" class="white_content">
-
-    <div class="close-btn">
-      <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';
-        document.getElementById('fade').style.display='none'">X</a>
-    </div>
-
-    <div id="signUp-form-div">
-      <h1>Sign up</h1>
-      <p>
-        Enjoy the convenience of a single account across all participating
-        brands
-      </p>
-
-      <form>
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="password" id="password" placeholder="Password" required />
-        <input type="text" id="username" placeholder="Username" required />
-        <input type="number" id="mobile" placeholder="Number" required />
-      </form>
-
-      <p>
-        By creating your account you agree to our
-        <a href="https://www.maxfashion.in/in/en/termsandconditions">Terms and conditions</a>
-      </p>
-      <button onclick="Register()">Register</button>
-    </div>
-  </div>
-  <div id="fade" class="black_overlay"></div> -->
+    <!-- navbar  main  section (importing) -->
+    <div id="nav_container"></div>
 
     <!--importing banner for mens women boys girls  -->
     <div id="banner_container"></div>
@@ -119,13 +31,18 @@
 <script src="/scripts/index.js"></script>
 
 <script type="module">
-  // importing footer
-  import footer from "./components/footer.js";
-  let footer_container = document.getElementById("footer_container");
-  footer_container.innerHTML = footer();
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
 
+  //importing banner part
   import banner from "./components/banner.js";
   let banner_container = document.getElementById("banner_container");
   banner_container.innerHTML = banner();
 
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
 </script>

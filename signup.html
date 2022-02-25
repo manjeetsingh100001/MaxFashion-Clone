@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/main.css" />
     <title>SignUp-Page</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <style>
+    #container{
+      width: 60%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <body>
+
+    <nav>
+      <div class="white-container flex">
+        <a href="/index.html"><img src="resources/max.png" alt="max-logo" /></a>
+
+        <ul class="white-right-menu flex">
+          <p>
+            <b><a href="login.html">LogIn</a></b>
+          </p>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="container">
+      <div id="signUp-form-div">
+        <h1>Sign up</h1>
+        <p>
+          Enjoy the convenience of a single account across all participating
+          brands
+        </p>
+
+        <form id="submit">
+          <input type="text" name="" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" required />
+          <input type="text" id="num" placeholder="Mobile" required />
+          <input id="pass" type="text" placeholder="Password" required />
+          <p>
+            By creating your account you agree to our
+            <a href="https://www.maxfashion.in/in/en/termsandconditions"
+              ><br />
+              Terms and conditions</a
+            >
+          </p>
+          <br />
+          <p>For logIn - <a href="login.html">Click here</a></p>
+          <input type="submit" id="register" value="Register" />
+        </form>
+      </div>
+    </div>
+
+     <!-- footer  main  section (importing) -->
+     <div id="footer_container"></div>
+
+  </body>
 </html>
+
+<script type="module">
+
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
+</script>
+

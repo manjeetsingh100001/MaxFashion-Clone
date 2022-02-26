@@ -1,5 +1,7 @@
+
+
 var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
-displayData(women_kurti);   //calling the display function.
+ displayData(women_kurti);   //calling the display function.
  console.log("women_kurti:",women_kurti);
 
  // sorting 
@@ -57,6 +59,7 @@ women_kurti.map((data) => {
   }
 
   // add to basket button creation.//
+  
   let div2=document.createElement("div");
   div2.id="div2";
   

@@ -1,14 +1,17 @@
 #container{
-    margin: 10px 15px 0px 15px;
+    margin-left:20px ;
+    margin-right:20px;
+    margin-top:20px;
 }
 
 
 #slideshow{
     width:100%;
     height: 400px;
+    vertical-align: middle
     /* border: 1px solid red; */
     margin-bottom: 80px;
-    margin-left: 60px;
+    /* margin-left: 0px; */
 }
 #party{
     width:95%;
@@ -94,6 +97,6 @@ a > img{
     margin:20px;
     margin-left:50px ;
 }
-#gift > img{
+/* #gift > img{
     margin-left: 50px;
-}
+} */

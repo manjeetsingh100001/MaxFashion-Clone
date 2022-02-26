@@ -10,17 +10,23 @@
     
   </head>
   <body>
+    <div id="container">
+
+      <h1>Kurtas & Kurtis</h1>
+
+      <select id="sortPriced" onchange="sortbyprice()">
+          <option value="">Sort by Price</option>
+          <option value="default">Default</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>    
+      </select>
+  
+      <div id="kurti_append"></div>
+      
+    </div>
 
     
-    <h1>Kurtas & Kurtis</h1>
-    <select id="sortPriced" onchange="sortbyprice()">
-        <option value="">Sort by Price</option>
-        <option value="default">Default</option>
-        <option value="Low">Low to High</option>
-        <option value="High">High to Low</option>
-        
-    </select>
-    <div id="kurti_append"></div>
+   
 
   </body>
 </html>

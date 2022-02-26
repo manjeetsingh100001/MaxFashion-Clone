@@ -1,3 +1,10 @@
+#container{
+  /* position:fixed; */
+  margin-left:20px;
+  margin-right:20px;
+}
+
+
 #kurti_append {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,8 +30,6 @@
  #div2:hover{
     border: 1px solid silver;
     width:100%;
-    
-
  }
 
   #div2:hover  .hide {

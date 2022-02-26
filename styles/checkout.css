@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+    color: black;
+};
+#checkout_container{
+    border: 1px solid red;
+   
+}
+
+#headerLogo{
+   align-items: center;
+    border: 1px solid red;
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+#leftside_div{
+/* display: flex; */
+width: 70%;
+
+}
+#shippingdetails_box{
+    display: flex;
+/* width: 70%; */
+/* margin: auto; */
+/* text-align: center; */
+justify-content: space-between;
+}
+#add_box{
+    /* width: 40%; */
+    height: 200px;
+    border: 1px solid red;
+}
+/* #paymentMethod_box{
+
+} */
+.cards_option{
+    /* width: 60%; */
+    /* display: flex;
+    justify-content: space-between;
+    border: 1px solid red; */
+
+}
+.expiryDate_cvvText{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+
+}
+.savethhiscardText{
+    display: flex;
+    
+}
+#Billing_add{
+    display: flex;
+    width: 60%;
+    border: 1px solid red;
+    justify-content: space-between;
+
+
+}
+#Billing_add select {
+    width: 50%;
+    background-color: white;
+    border: none;
+    text-align: center;
+}
+#EMI_div{
+    display: flex;
+
+}

@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="/styles/cart.css" />
     <title>cart page</title>
   </head>
+  <link rel="stylesheet" href="./styles/footer.css" />
   <body>
-
-    <h2>Your Shopping Basket</h2>
+    <div id="section_heading_title">
+      <div>
+        <p>Your Shopping Basket</p>
+      </div>
+      <div class="Offer_text">
+        <span>Get the offer</span>
+        <p>Flat 200 Off on 1999 & above, code- MAX200</p>
+      </div>
+      <div class="Offer_text">
+        <span>Get the offer</span>
+        <p>
+          Flat 100 Off on 999 & above ORDERS, code- NEW100 (First purchase only)
+        </p>
+      </div>
+    </div>
     <div id="Cart_Container">
       <div class="tableheading">
         <table>
-          <thead class="carttable">
+          <thead>
             <tr>
               <th>Item</th>
               <th>Description</th>
@@ -22,68 +36,81 @@
               <th>Total</th>
             </tr>
           </thead>
+          <img src="./resources/max.png" alt="" srcset="" />
           <tbody></tbody>
         </table>
       </div>
 
       <div id="subTotal_Div">
         <p id="subtotal"></p>
-     
 
-        <button id="checkoutBtn">
-          <a
-            href="#"
-            target="_blank"
-            style="color: white; text-decoration: none"
-            >Checkout Now</a
-          >
-        </button>
-    </div>
+        <div id="checkOut_div">
+          <button id="checkoutBtn">
+            <a
+              href="./checkout.html"
+              target="_blank"
+              style="color: white; text-decoration: none"
+              >Checkout Now</a
+            >
+          </button>
+        </div>
+        <div id="paytImgs">
+          <img src="./resources/payment options.png" alt="" srcset="" />
+          <p style="color: gray">
+            Earn up to 4 Landmark Rewards points on this order.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div id="Coupon-div">
-
-
-
-        <p>Got a Promo Code? <a href="#" onclick="showInputbox()" id="spanUsecodeclick">Use it here</a> </p>
+      <div class="Gifticons_flextText">
+        <img src="./resources/gift icon cart page.jpeg" alt="" srcset="" />
+        <p>
+          Got a Promo Code?
+          <a onclick="showInputbox()" id="spanUsecodeclick">Use it here</a>
+        </p>
+      </div>
       <form id="formForm">
-        <input id="CouponInput" type="text" placeholder="Enter Your Coupon here" />
+        <input id="CouponInput" type="text" placeholder="Enter Promo Code" />
         <input type="submit" value="Apply" />
       </form>
-
-      <p>Have a Gift Card? Redeem it at checkout.</p>
-
+      <div class="Gifticons_flextText">
+        <img src="./resources/gift card icon.jpeg" alt="" />
+        <p>Have a Gift Card? Redeem it at checkout.</p>
+      </div>
     </div>
-<div id="Contact_Text">
-    <h2>Need help? We're here for you.</h2>
-    <p>Call Customer Support at 1800-123-1444</p>
-    <p>Write to us</p>
-    <p>Return Policy</p>
-</div>
+    <div id="Contact_Text">
+      <p>Need help? We're here for you.</p>
+      <div class="icon_contact_flex">
+        <img src="./resources/ui-call.svg" alt="" srcset="" />
+        <p>Call Customer Support at 1800-123-1444</p>
+      </div>
+      <div class="icon_contact_flex">
+        <img src="./resources/email.svg" alt="" srcset="" />
+        <p>Write to us</p>
+      </div>
 
-<div id="bottom_Text">
-    <div> 
-    <h2>Subscribe to our awesome emails.</h2>
-    <p>Get our latest offers and news straight in your inbox.</p>
-    <div> 
-    <input type="text"  id="subscribe_input" placeholder="Please enter an email address">
-    <input type="btn" id="subscribe_btn" value="Subscribe">
-</div>
-</div>
-<div id="appDownload">
-    <h2>Enjoy our amazing apps</h2>
-    <p>Shop our products and offers on-the-go.</p>
-    <div id="getappImg">
-        <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" alt="">
-        <!-- <img src="https://www.edsys.in/wp-content/uploads/Play-Store-Logo-2.png" alt=""> -->
+      <div class="icon_contact_flex">
+        <img src="./resources/spinner-alt-3.svg" alt="" srcset="" />
+        <p>Return Policy</p>
+      </div>
     </div>
-</div>
-</div>
-
-    </div>
+    <div id="footerContainer"></div>
   </body>
 </html>
 
-<!-- js -->
+<!-- js part of cart-->
 
 <script src="/scripts/cart.js"></script>
+
+
+<!-- Footer importing -->
+<script type="module">
+  import footer from "./components/footer.js";
+
+  // console.log(footer())
+  let footerDisplay = document.getElementById("footerContainer");
+
+  footerDisplay.innerHTML = footer();
+</script>

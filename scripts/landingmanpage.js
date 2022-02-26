@@ -29,7 +29,7 @@ maindiv.setAttribute("id","maindiv")
   
    let div1=document.createElement("div")
    div1.setAttribute("class","container")
-   div1.addEventListener("dblclick",function(){
+   div1.addEventListener("click",function(){
       detail(elem)
   })
    let image=document.createElement("img")

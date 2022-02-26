@@ -5,11 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+  
     <link rel="stylesheet" href="/styles/cart.css" />
     <title>cart page</title>
+
   </head>
-  <link rel="stylesheet" href="./styles/footer.css" />
+
   <body>
+    <!-- navbar  main  section (importing) -->
+    <div id="nav_container"></div>
+
+    <div id="main_container">
+
     <div id="section_heading_title">
       <div>
         <p>Your Shopping Basket</p>
@@ -37,7 +53,6 @@
               <th>Total</th>
             </tr>
           </thead>
-          <img src="./resources/max.png" alt="" srcset="" />
           <tbody></tbody>
         </table>
       </div>
@@ -97,7 +112,11 @@
         <p>Return Policy</p>
       </div>
     </div>
-    <div id="footerContainer"></div>
+  </div>
+
+     <!-- footer  main  section (importing) -->
+     <div id="footer_container"></div>
+
   </body>
 </html>
 
@@ -106,12 +125,14 @@
 <script src="/scripts/cart.js"></script>
 
 
-<!-- Footer importing -->
 <script type="module">
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
+
+  // importing footer part
   import footer from "./components/footer.js";
-
-  // console.log(footer())
-  let footerDisplay = document.getElementById("footerContainer");
-
-  footerDisplay.innerHTML = footer();
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
 </script>

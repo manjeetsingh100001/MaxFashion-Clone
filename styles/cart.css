@@ -1,8 +1,6 @@
-body {
-  background-color: #ffffff;
-  color: rgb(61, 70, 77);
-  font-family: sans-serif;
-  font-weight: lighter;
+#main_container{
+  padding: 0px 90px 0px 90px;
+  margin-bottom: 40px;
 }
 /* <--------Heading Titles & offer code Text-----> */
 #section_heading_title {
@@ -21,6 +19,7 @@ body {
   font-size: 12px;
 }
 .Offer_text span {
+  margin-top: 5px;
   padding: 2px 6px;
   background-color: #ee8787;
   border-radius: 3px;
@@ -42,7 +41,7 @@ body {
 table {
   padding: 0 10px;
   width: 87%;
-  margin: auto;
+  margin: 20px auto;
   border-collapse: collapse;
 }
 
@@ -102,7 +101,6 @@ table img {
   height: 210px;
   text-align: center;
   color: black;
-  font-weight: lighter;
   padding: 5px 20px;
 }
 

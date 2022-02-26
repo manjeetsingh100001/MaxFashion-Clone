@@ -45,7 +45,7 @@ function nav() {
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="#"><i class="fas fa-shopping-bag"></i>Basket</a>
+                    <a href="cart.html"><i class="fas fa-shopping-bag"></i>Basket</a>
                 </li>
             </ul>
         </div>

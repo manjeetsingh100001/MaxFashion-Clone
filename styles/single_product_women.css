@@ -27,8 +27,6 @@
     margin: 20px;
     text-align: center;
   }
-  #details {
-  }
   .box {
     display: inline;
     width: 13%;
@@ -39,10 +37,6 @@
     background-color: aliceblue;
     text-align: center;
   }
-  /* .box:focus {
-    background-color: #dd4814;
-  } */
-
   #size button:focus{
     background-color: #dd4814;
   }
@@ -75,4 +69,8 @@
   }
   #tit{
       margin-left: 20px;
+  }
+  #main_container{
+    margin-top: 50px;
+    padding: 100px;
   }

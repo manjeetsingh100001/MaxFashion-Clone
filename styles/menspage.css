@@ -1,112 +1,170 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700;900&display=swap");
-body{
-  font-family: "Roboto",sans-serif;
+/* Mens tees & polo section Poduct page in which grid is used (CSS) */
+#main{
+  margin-top: 140px;
 }
-#zeus{
-  width: 1300px;
-  margin:auto;
+#main_container{
+  padding: 0px 100px 0px 100px;
+}
+#main_container p {
+  color: rgb(202, 202, 202);
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#zeus {
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(4,20%);
-  justify-content: space-around;
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  transition: all 0.3s ease-in-out;
 }
-img{
-  width: 280px;
-  height: 290px;
+#zeus img{
+  padding: 5px;
+  width: 298px;
+  transition: all 0.3s ease-in-out;
 }
-#hideseek{
+#hideseek {
   display: none;
   height: 100%;
 }
-#basketbutton{
+#basketbutton {
   height: 50px;
 }
-#maindiv:hover #hideseek{
-  background-color: rgb(10, 10, 109);
+#maindiv:hover #hideseek {
   display: block;
-  border: none;
-  width: 280px;
-  height: 100%;
+  background-color:#303ab2;
   color: white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
 }
-#maindiv:hover{
-  border: 1px solid silver;
-  width: 280px;
+#maindiv:hover {
+  border: 1px solid rgb(230, 230, 230);
+  width:100%;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
 }
 
-#detail{
-  display: flex;
+#detail {
+  display: flex; 
 }
-#dadda{
+#dadda {
   width: 800px;
 }
-#dadda>img{
+#dadda > img {
   width: 750px;
   height: 580px;
 }
-#pappa{
-  width:450px
+#pappa {
+  width: 450px;
 }
-#smallimage{
+#smallimage {
   width: 80px;
   height: 80px;
-  border: 1px solid rgb(10,10,109);
+  border: 1px solid rgb(10, 10, 109);
 }
-#sizebox{
+#sizebox {
   display: flex;
   justify-content: space-between;
 }
-#sizebutton{
+#sizebutton {
   background-color: rgb(10, 10, 109);
   color: white;
-  padding:10px 80px 10px 80px;
+  padding: 10px 80px 10px 80px;
   border: none;
   margin-left: 20px;
 }
-#buttondiv{
+#buttondiv {
   width: 350px;
   margin-top: 25px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
-#sizebutton2{
+#sizebutton2 {
   background-color: red;
   color: white;
-  padding:10px 80px 10px 80px;
+  padding: 10px 80px 10px 80px;
   border: none;
 }
-#detail>#fav{
+#detail > #fav {
   margin-top: 20px;
 }
-.sizepart{
+.sizepart {
   border: 1px solid grey;
-  
+
   padding: 8px;
 }
-.sizepart:hover{
+.sizepart:hover {
   background-color: aqua;
 }
-.firstheading{
+.firstheading {
   margin-left: 43px;
 }
-#homepage1{
+#homepage1 {
   width: 1200px;
-display: grid;
-grid-template-columns: repeat(6,202px);
-grid-gap: 10px;
-margin-left: 43px;
+  display: grid;
+  grid-template-columns: repeat(6, 202px);
+  grid-gap: 10px;
+  margin-left: 43px;
 }
-#homeicon1{
-width: 182px;
-height: 194px;
-grid-gap: 10px;
+#homeicon1 {
+  width: 182px;
+  height: 194px;
+  grid-gap: 10px;
 }
-#shopby{
-margin-left: 45px;
+/* sorting - filtering css  */
+
+#sorting_and_filter_Div{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  background-color: rgb(248, 248, 248);
+  
 }
-#headerimages{
-  width: 100%;
-  height: 450px;
+#sorting_and_filter_Div select{
+
+  width:200px;
+  height:50px;
+  border: none;
+
 }
 
+
+/* men.html page css  */
+#main_container {
+  margin-top: 100px;
+  padding: 0px 100px 0px 100px;
+}
+#main_container hr{
+  border: 1px solid rgb(233, 233, 233);
+}
+#slideshow {
+  width: 100%;
+  border: 1px solid red transparent;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.content{
+  height: 600px;
+  width: 100%;
+}
+#shopby {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+#headerimages {
+  width: 100%;
+}

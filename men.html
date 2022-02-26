@@ -4,16 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/menspage.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menspage.css" />
     <title>Mens page</title>
-    <style></style>
   </head>
   <body>
-    
-    <img id="headerimages" />
-    <h1 id="shopby">Shop By Category</h1>
-    <div id="homepage1"></div>
+    <!-- navbar  main  section (importing) -->
+    <div id="nav_container"></div>
 
+    <div id="main_container">
+      <div id="slideshow">
+        <img id="headerimages" />
+      </div>
+      <br>
+      <hr>
+
+      <div class="content">
+        <h1 id="shopby">Shop By Category</h1>
+        <div id="homepage1"></div>
+        <br>
+        <hr>
+      </div>
+     
+    </div>
+
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
   </body>
 </html>
 
@@ -32,4 +56,16 @@
       i = 0;
     }
   }, 2000);
+</script>
+
+<script type="module">
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
+
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
 </script>

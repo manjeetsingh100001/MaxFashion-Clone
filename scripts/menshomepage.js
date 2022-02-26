@@ -13,5 +13,5 @@ var homemenpage=JSON.parse(localStorage.getItem("homemenspageinfo"))
             document.querySelector("#homepage1").append(div)
         });
         function tomainpage(){
-            window.location.href="landingmenpage.html"
+            window.location.href="single_product_men.html"
         }

@@ -4,19 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="/styles/single_product_women.css">
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="/styles/single_product_women.css" />
+    <title>single_product_women_Page</title>
   </head>
   <body>
-    <h2>Single kurti page</h2>
-    <div id="parent"></div>
-  
+    <!-- navbar  main  section (importing) -->
+    <div id="nav_container"></div>
+
+    <div id="main_container">
+      <h2>Single kurti page</h2>
+      <div id="parent"></div>
+    </div>
+
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
   </body>
 </html>
-<script src="./scripts/single_product_women.js">
-  
+<script src="./scripts/single_product_women.js"></script>
+
+<script type="module">
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
+
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
 </script>

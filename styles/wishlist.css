@@ -1,0 +1,85 @@
+body {
+  background-color: white;
+  color: black;
+}
+#heading_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid silver;
+  padding-left: 15px;
+}
+#heading_text img {
+  margin-top: 10px;
+  width: 20%;
+}
+#remove_all {
+  border: 1px solid silver;
+  width: 50%;
+  margin: auto;
+  padding-left: 20px;
+}
+
+/*<-------Table for cart items----------> */
+
+table {
+  padding: 0 10px;
+  width: 50%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: left;
+  
+}
+table img {
+  width: 100%;
+  height: 100%;
+}
+th {
+  color: rgb(61, 70, 77);
+  font-weight: bold;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  font-size: 12px;
+  padding: 10px 30px;
+}
+table div{
+  padding-left: 10%;
+  /* border: 1px solid red; */
+
+}
+td>p  {
+  text-align: center;
+}
+
+td:nth-child(1) {
+  width: 20%;
+
+}
+td:nth-child(2) {
+  width: 40%;
+  font-size: 14px;
+  text-align: right;
+  padding-left: 2%;
+  border: 1px solid blue;
+}
+td:nth-child(3){
+    text-align: right;
+}
+#removeBtn ,#addToBasket {
+  color: #626ac4;
+  font-size: 18px;
+}
+
+
+
+
+
+
+/* <------Bottom single text & image---------> */
+#bottomImg_text{
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    margin:10% auto;
+}

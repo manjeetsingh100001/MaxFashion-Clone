@@ -39,8 +39,9 @@ function nav() {
 
             <ul class="white-right-menu flex">
                 <li>
+                    <p id="hi_user"></p>
                     <p>
-                        <a href= "signup.html">SignUp</a>
+                        <a  href= "signup.html">SignUp</a>
                     </p>
                 </li>
                 <li>|</li>
@@ -56,3 +57,6 @@ function nav() {
 `
 }
 export default nav;
+
+
+

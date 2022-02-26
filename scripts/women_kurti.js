@@ -69,6 +69,7 @@ women_kurti.map((data) => {
 
   basket.textContent = "ADD TO BASKET";
   basket.onclick = () =>{
+    
       localStorage.setItem("single_kurti",JSON.stringify(data));
       alert("Added to cart");
 

@@ -1,21 +1,21 @@
-var cartitems = JSON.parse(localStorage.getItem("CartItems")) || [];  //cart array from localstorage
+var cartproducts = JSON.parse(localStorage.getItem("cartproducts")) || [];  //cart array from localstorage
 
-displayCart(cartitems);
+displayCart(cartproducts);
 
 //<--- Calling function and mapping CartItems--------->
 var trTotal = 0;
 
-function displayCart(cartitems) {
+function displayCart(cartproducts) {
   document.querySelector("tbody").textContent = "";
 
-  cartitems.map(function (data, index) {
+  cartproducts.map(function (data, index) {
     var tr = document.createElement("tr");    //main table row for appending all cart data
 
 
     //Product Image
     var tdImg = document.createElement("td");
     var img = document.createElement("img");
-    img.setAttribute("src", data.image);
+    img.setAttribute("src", data.image_url);
     tdImg.append(img);
     
     //Product name
@@ -27,6 +27,8 @@ function displayCart(cartitems) {
     tdPrice.textContent = `₹ ${data.price} .00`;
 
     // <------Creating Elements for select and options----->
+    let sel_div = document.createElement("div");
+    sel_div.id = "sel-Div"
 
     var sel = document.createElement("select");
     sel.setAttribute("id", "qntySelect");
@@ -49,6 +51,7 @@ function displayCart(cartitems) {
     sel.add(opt4);
     sel.add(opt5);
 
+    sel_div.append(sel);
     // <------Ending Point of select and options----->
 
 // Delete item remove btn
@@ -83,7 +86,7 @@ function displayCart(cartitems) {
    
 
     tdremoveBtn.append(td6);
-    tr.append(tdImg, tdName, tdPrice,sel, tdremoveBtn, tdTotalPrice);
+    tr.append(tdImg, tdName, tdPrice,sel_div, tdremoveBtn, tdTotalPrice);
     document.querySelector("tbody").append(tr);
   });
   //tdImg --> product image
@@ -98,21 +101,21 @@ function displayCart(cartitems) {
 //<------ Delete Items here----------->
 
 function deleteItems(index) {
-  cartitems.splice(index, 1);
-  localStorage.setItem("CartItems", JSON.stringify(cartitems));
-  displayCart(cartitems);
+  cartproducts.splice(index, 1);
+  localStorage.setItem("CartItems", JSON.stringify(cartproducts));
+  displayCart(cartproducts);
   subtotalShow()
-  cartLength(cartitems)
+  cartLength(cartproducts)
 }
 
 
 
 //<-----Cart length----->
-cartLength(cartitems)
+cartLength(cartproducts)
 
- function cartLength(cartitems) {
+ function cartLength(cartproducts) {
  
-  let count = cartitems.length;
+  let count = cartproducts.length;
   return count;
 };
 
@@ -126,14 +129,14 @@ cartLength(cartitems)
 var totalSum = 0;
 subtotalShow()
 function subtotalShow(){
-   totalSum = cartitems.reduce(function (acc, cv) {
+   totalSum = cartproducts.reduce(function (acc, cv) {
     return acc + Number(cv.price);
   }, 0);
   console.log(trTotal)
   
   document.querySelector(
     "#subtotal"
-  ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartitems)} items)`;
+  ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartproducts)} items)`;
   }
 
 
@@ -144,10 +147,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
   var coupon_no = document.querySelector("#CouponInput").value;
   if (coupon_no == "masai30") {
-    totalSum = Math.floor((30 / 100) * totalSum);
+    totalSum = Math.floor((70 / 100) * totalSum);
     document.querySelector(
       "#subtotal"
-    ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartitems)} items)`;
+    ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartproducts)} items)`;
     alert("Coupon Applied Successfully");
   } else {
     alert("Please enter correct coupon code");

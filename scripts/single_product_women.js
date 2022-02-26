@@ -1,9 +1,13 @@
+// array for cart -->
+var cartarr=localStorage.getItem("cartproducts1")||[]
+
 var prodarr = [];
   var prod_kurti = JSON.parse(localStorage.getItem("single_kurti"));
   prodarr.push(prod_kurti);
   console.log(prodarr);
   appendprod(prodarr);
   function appendprod(prodarr) {
+
     prodarr.forEach((el) => {
       let container = document.getElementById("parent");
 
@@ -70,9 +74,9 @@ var prodarr = [];
       let basket = document.createElement("button");
       basket.setAttribute("id", "basket");
       basket.innerText = "ADD TO BASKET";
-       basket.onclick=() =>{
-           localStorage.setItem("single_kurti", JSON.stringify(el))
-       }
+       basket.addEventListener("click",function(){
+        cart(el)
+    })
 
       let favourite = document.createElement("button");
       favourite.innerHTML = `&#10084 Add to Favourites`;
@@ -99,3 +103,9 @@ var prodarr = [];
       container.append(div);
     });
   }
+
+  // function for storing el to cart -->
+  function cart(el){
+    cartarr.push(el)
+    localStorage.setItem("cartproducts1",JSON.stringify(cartarr))
+}

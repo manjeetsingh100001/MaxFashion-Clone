@@ -1,4 +1,4 @@
-// let creditcard = document.getElementById(creditcard).checked;
+
 
 console.log(creditcard.checked);
 

@@ -24,7 +24,7 @@ function displayCart(cartitems) {
 
     //product price
     var tdPrice = document.createElement("td");
-    tdPrice.textContent = `₹ ${data.price} .00`;
+    tdPrice.textContent = `₹  ${data.price} .00`;
 
     // <------Creating Elements for select and options----->
     let sel_div = document.createElement("div");

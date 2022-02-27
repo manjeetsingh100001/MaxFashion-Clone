@@ -1,5 +1,9 @@
-// array for cart -->
+//cart & wishlist array to local storage
 var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
+
+var wishcartArr = JSON.parse(localStorage.getItem("wishCartItems")) || [];
+
+// getting data , mapping and appending
 var prodarr = [];
 var prod_kurti = JSON.parse(localStorage.getItem("single_kurti"));
 prodarr.push(prod_kurti);
@@ -80,9 +84,9 @@ function appendprod(prodarr) {
     let favourite = document.createElement("button");
     favourite.innerHTML = `&#10084 Add to Favourites`;
     favourite.setAttribute("id", "favourite");
-    favourite.onclick = () => {
-      localStorage.setItem("wishlist", JSON.stringify(el));
-    };
+    favourite.addEventListener("click", function () {
+      addtoWishlist(el);
+    });
 
     let promotion = document.createElement("button");
     promotion.setAttribute("id", "promotion");
@@ -107,5 +111,13 @@ function appendprod(prodarr) {
     cartArr.push(data);
     alert(data.name + "  " + "Added");
     localStorage.setItem("CartItems", JSON.stringify(cartArr));
+  }
+
+  //<----------Adding to wishlist here--------->
+
+  function addtoWishlist(data) {
+    wishcartArr.push(data);
+    alert(data.name + "  " + "Added");
+    localStorage.setItem("wishCartItems", JSON.stringify(wishcartArr));
   }
 }

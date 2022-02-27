@@ -4,9 +4,10 @@ console.log("women_kurti:",women_kurti);
 
 
 
-//<----- CART ARRAY PUSHING TO CART & GETTING ALSO---->
+//<--------cart & wishlist array to local storage------->
 var cartArr = JSON.parse(localStorage.getItem("CartItems")) || []
 
+var wishcartArr = JSON.parse(localStorage.getItem("wishCartItems")) || [];
 
 
  // sorting 
@@ -18,12 +19,6 @@ var cartArr = JSON.parse(localStorage.getItem("CartItems")) || []
      if(select.value=="High") {
            women_kurti.sort(function(a,b){return b.price - a.price;});
      }
-  //    if(select.value=="default")
-  //    {
-  //        women_kurti.sort(function(){return women_kurti})
-  //     // displayData(women_kurti);
-  //    }
-
      displayData(women_kurti);
      console.log("women_kurti:",women_kurti);
 
@@ -59,9 +54,9 @@ women_kurti.map((data) => {
   let favourite= document.createElement("button");
   favourite.innerHTML =`&#10084`;  
   favourite.setAttribute("id", "favourite")
-  favourite.onclick = ()=>{
-      //add to favorites list function to written.
-  }
+  favourite.addEventListener("click", function () {
+    addtoWishlist(data);
+  });
 
   // add to basket button creation.//
   let div2=document.createElement("div");
@@ -108,6 +103,14 @@ console.log("women_kurti:",women_kurti);
   alert(data.name + "  " + "Added")
   localStorage.setItem("CartItems", JSON.stringify(cartArr))
 
+}
+
+ //<----------Adding to wishlist here--------->
+
+ function addtoWishlist(data) {
+  wishcartArr.push(data);
+  alert(data.name + "  " + "Added");
+  localStorage.setItem("wishCartItems", JSON.stringify(wishcartArr));
 }
 
 }

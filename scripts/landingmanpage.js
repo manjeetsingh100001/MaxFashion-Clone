@@ -1,8 +1,14 @@
+//<--------cart & wishlist array to local storage------->
+var cartArr = JSON.parse(localStorage.getItem("CartItems")) || []
+
+var wishcartArr = JSON.parse(localStorage.getItem("wishCartItems")) || [];
+
+
+
+// Mens data 
 let data = JSON.parse(localStorage.getItem("mensdata")) || [];
 displayData(data);
 
-
-var cartArr = JSON.parse(localStorage.getItem("CartItems")) || []
 
 var detailarr = localStorage.getItem("details") || [];
 
@@ -19,12 +25,6 @@ function sortbyprices() {
       return b.price - a.price;
     });
   }
-  //    if(select.value=="default")
-  //    {
-  //        women_kurti.sort(function(){return women_kurti})
-  //     // displayData(women_kurti);
-  //    }
-
   displayData(data);
   console.log("men_tees:", data);
 }

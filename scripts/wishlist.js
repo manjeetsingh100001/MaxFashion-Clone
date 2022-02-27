@@ -1,22 +1,21 @@
-var cartitems = JSON.parse(localStorage.getItem("CART")) || [];
+var wishlistItem = JSON.parse(localStorage.getItem("wishCartItems")) || [];
 
-// two work remaining on add to basket remove from wishlist page and 
-
+console.log(wishlistItem)
 var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
 console.log(cartArr)
-displayCart(cartitems);
+displayCart(wishlistItem);
 
 //<--- Calling function and mapping CartItems--------->
 
-function displayCart(cartitems) {
+function displayCart(wishlistItem) {
   document.querySelector("tbody").textContent = "";
 
-  cartitems.map(function (data, index) {
+  wishlistItem.map(function (data, index) {
     var tr = document.createElement("tr");
 
     var tdImg = document.createElement("td");
     var img = document.createElement("img");
-    img.setAttribute("src", data.image);
+    img.setAttribute("src", data.image_url);
     tdImg.append(img);
 
     var tdName = document.createElement("td");
@@ -56,9 +55,9 @@ function displayCart(cartitems) {
 //<------ Delete Items here----------->
 
 function deleteItems(index) {
-  cartitems.splice(index, 1);
-  localStorage.setItem("CartItems", JSON.stringify(cartitems));
-  displayCart(cartitems);
+  wishlistItem.splice(index, 1);
+  localStorage.setItem("wishCartItems", JSON.stringify(wishlistItem));
+  displayCart(wishlistItem);
 }
 
 
@@ -74,21 +73,22 @@ function deleteItems(index) {
   
 
 //<-----Cart length----->
-  let count = cartitems.length;
+  let count = wishlistItem.length;
 console.log(count) ;
+
 
 //<---Remove All---->
 function removeAll(){
-  console.log(cartitems)
+  console.log(wishlistItem)
 
-cartitems.map((data, index) => {
+wishlistItem.map((data, index) => {
 console.log(data)
-cartitems.splice(index, count);
-localStorage.setItem("CartItems", JSON.stringify(cartitems));
+wishlistItem.splice(index, count);
+localStorage.setItem("wishCartItems", JSON.stringify(wishlistItem));
 
 });
 alert("Sucessfully removed all item")
-displayCart(cartitems);
+displayCart(wishlistItem);
 
 }
 

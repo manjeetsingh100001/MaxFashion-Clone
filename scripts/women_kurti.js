@@ -1,5 +1,7 @@
 var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
+
 displayData(women_kurti);   //calling the display function.
+
 console.log("women_kurti:",women_kurti);
 
 

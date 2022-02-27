@@ -77,7 +77,8 @@
             </div>
             <p>Your order number is <span class="orderNo" style="color: blue"></span></p>
             <p>You'll get it within <span style="color: green;">5-7 business days</span></p>
-            <br>
+            
+            <h4>Continue shopping <a href="index.html" style="color: rgb(70, 70, 223);">Click here</a> </h4>
             <div id="Contact_Text">
                 <p>Have a questions? We'd love to help</p>
                 <div class="icon_contact_flex">
@@ -111,7 +112,7 @@
   orderNo.innerHTML = order;
   console.log(order)
 
-  let name = JSON.parse(localStorage.getItem("username"));
+  let name = localStorage.getItem("username");
   console.log(name)
   showName.innerHTML = name;
 </script>

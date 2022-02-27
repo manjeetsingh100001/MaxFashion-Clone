@@ -1,187 +1,168 @@
-
-  #headerLogo {
-    align-items: center;
-    border: 1px solid black;
-    display: flex;
-    text-align: right;
-    justify-content: space-between;
-    padding: 0 2%;
-  }
-  #checkout_container {
-      padding: 0 20px;
-    display: flex;
-    /* border: 1px solid blue; */
-  }
-  #leftside_div {
-    flex: 7;
-    /* border: 1px solid red; */
-  }
-  #right_div {
-    flex: 3;
-    /* border: 1px solid green; */
-  }
-  #shippingdetails_box {
-    display: flex;
-    border: 1px solid silver;
-    justify-content: space-around;
-    
-  }
-  #shippingdetails_box div {
-    width: 45%;
-    border-right: 1px solid silver;
-    border: collapse;
-  }
-  #add_box {
-      width: 100%;
-    /* border: 1px solid red; */
-  }
-  #add_box input{
-    width: 90%;
-    height: 30px;
-    margin: 10px 0;
-    
-  }
-  .paymentOpt {
-    display: flex;
-    align-items: center;
-  }
-  .paymentOpt img {
-    width: 60px;
-    height: 60px;
-  }
-  #expiryDate_cvvDiv{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
-
-  }
-  #expiryDate_cvvDiv input[type="text"]{
-    width: 80px;
-
-  }
-  .expiryDate_cvvText{
-      display: flex;
-      justify-content: space-between;
-    width: 70%;
-    height: 30px;
-    margin: 10px 0;
-
+#headerLogo {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  padding: 0 2%;
 }
-#select_option_div select{
-    margin-left: 10px;
+#checkout_container {
+  padding: 0 20px;
+  display: flex;
 }
-.savethhiscardText{
+#leftside_div {
+  flex: 7;
+}
+#right_div {
+  flex: 3;
+}
+#shippingdetails_box {
+  width: 95%;
+  display: flex;
+  border: 1px solid silver;
+  justify-content: space-between;
+}
+#shippingdetails_box div {
+  padding-left: 10px;
+  width: 40%;
+  border-right: 1px solid silver;
+}
+#add_box {
+  width: 100%;
+}
+#add_box input {
+  width: 90%;
+  height: 30px;
+  margin: 10px 0;
+}
+.paymentOpt {
+  display: flex;
+  align-items: center;
+}
+.paymentOpt img {
+  width: 60px;
+  height: 60px;
+}
+#expiryDate_cvvDiv {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+#expiryDate_cvvDiv input[type="text"] {
+  width: 80px;
+}
+.expiryDate_cvvText {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 30px;
+  margin: 10px 0;
+}
+#select_option_div select {
+  margin-left: 10px;
+}
+.savethhiscardText {
   display: flex;
   justify-content: space-around;
   padding-left: 0px;
   font-size: 14px;
-  /* border: 1px solid red; */
-
 }
-#Billing_add{
+#Billing_add {
+  width: 95%;
   display: flex;
-  width: 100%;
+
   border: 1px solid silver;
   justify-content: space-around;
 }
-#Billing_add>select{
-    text-align: center;
-    background-color: white;
-    border: none;
-  /* border: 1px solid silver; */
+#Billing_add > select {
+  text-align: center;
+  background-color: white;
+  border: none;
+
   width: 50%;
   font-size: 20px;
 }
 
-
-#payNow_div{
-    width: 80%;
-    font-size: 14px;
+#payNow_div {
+  width: 80%;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
 }
-#payNow_div :last-child{
-    width: 20%;
-    height: 40px;
+#payNow_div :last-child {
+  width: 20%;
+  height: 40px;
 }
-#securityDescription{
+#securityDescription {
   display: flex;
   font-size: 12px;
- justify-content: space-around;
+  justify-content: space-around;
 }
-#Gifticons_flextText img{
+#Gifticons_flextText img {
   width: 20px;
   height: 20px;
- margin-right: 20px;
+  margin-right: 20px;
 }
 
-#spanUsecodeclick,#show_add {
-    color: blue;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  #CouponInput {
-    padding: 8px;
-    font-size: 16px;
-    width: 60%;
-    margin-left: 0;
-  }
+#spanUsecodeclick,
+#show_add {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+#CouponInput {
+  padding: 8px;
+  font-size: 16px;
+  width: 60%;
+  margin-left: 0;
+}
 input[type="submit"] {
-    font-size: 16px;
-    border-radius: 4px;
-    border: 0;
-    width: 25%;
-    padding: 10px;
-    background-color: #626ac4;
-    color: white;
-  }
-  
-  input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: blue;
-  }
-  .home_office{
-      margin-top: 20px;
-      display: flex;
-      width: 200px;
-      align-items: center;
-      justify-content: center;
-  }
-  #cardInput_box{
-    margin-top: 20px;
-  }
- #cardInput_box>input{
-    width: 90%;
-    height: 30px;
-    margin: 10px 0;
- }
-
-
-
-
-
-
- /*<------- cart right side css--------> */
- #right_div{
-   width: 100%;
-   /* padding-bottom: 20px; */
- }
-#right_div>div{
- border: 1px solid silver;
- padding-left: 10px;
-
+  font-size: 16px;
+  border-radius: 4px;
+  border: 0;
+  width: 25%;
+  padding: 10px;
+  background-color: #626ac4;
+  color: white;
 }
 
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.home_office {
+  margin-top: 20px;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+#cardInput_box {
+  margin-top: 20px;
+}
+#cardInput_box > input {
+  width: 90%;
+  height: 30px;
+  margin: 10px 0;
+}
 
- .tableheading{
+/*<------- cart right side css--------> */
+#right_div {
+  width: 100%;
+}
+#right_div > div {
+  border: 1px solid silver;
+  padding-left: 10px;
+}
+
+.tableheading {
   max-height: 300px;
   overflow: scroll;
 }
 /*<-------Table for cart items----------> */
-td{
+td {
   border: 1px solid silver;
-
 }
 
 td:nth-child(1) {
@@ -193,15 +174,13 @@ td:nth-child(2) {
   color: rgb(61, 70, 77);
   font-weight: lighter;
   font-size: 12px;
- padding-left: 10px;
+  padding-left: 10px;
 }
 td:nth-child(3) {
   color: rgb(61, 70, 77);
   font-weight: 600;
   font-size: 12px;
-  /* padding-right:20px; */
 }
-
 
 /* CartItems Image styling here */
 
@@ -213,29 +192,23 @@ table img {
 /* <----------Subtotal Div and Checkout Btn---------> */
 #subTotal_Div {
   margin-top: 3%;
-  /* border: 1px solid silver; */
-  /* border-bottom: none; */
+
   text-align: center;
   color: black;
   font-weight: lighter;
   padding: 5px 20px;
 }
 
-#subTotal_Div>p{
-  /* border: 1px solid silver; */
+#subTotal_Div > p {
   border-top: 1px solid silver;
   border-bottom: 1px solid silver;
   padding: 10px 0;
-
 }
 
 #subTotal_Div :nth-child(2) {
-  
   border-top: 1px solid silver;
   padding: 4px 0;
-
 }
-
 
 #paytImgs {
   margin-top: 5px;
@@ -245,11 +218,3 @@ table img {
   font-size: 10px;
   margin-top: 25px;
 }
-
-
-
-
-
-
-
-

@@ -2,6 +2,13 @@ var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
 displayData(women_kurti);   //calling the display function.
 console.log("women_kurti:",women_kurti);
 
+
+
+//<----- CART ARRAY PUSHING TO CART & GETTING ALSO---->
+var cartArr = JSON.parse(localStorage.getItem("CartItems")) || []
+
+
+
  // sorting 
  function sortbyprice() {
      let select=document.getElementById("sortPriced");
@@ -68,13 +75,15 @@ women_kurti.map((data) => {
   basket.setAttribute("class", "hide");
 
   basket.textContent = "ADD TO BASKET";
-  basket.onclick = () =>{
-    
-      localStorage.setItem("single_kurti",JSON.stringify(data));
-      alert("Added to cart");
+  basket.addEventListener("click", function() {
+     //adding eventlisterner to "Add to cart button"
+    addtoCart(data)
+})
+
+      
 
       //basket counter update function to write here. 
-  }
+  
 
   basket_div.append(basket);
   
@@ -91,5 +100,14 @@ women_kurti.map((data) => {
      container.append(div2);
 });
 console.log("women_kurti:",women_kurti);
+
+
+ //<-----Adding to cart here-------->
+ function addtoCart(data) {
+  cartArr.push(data)
+  alert(data.name + "  " + "Added")
+  localStorage.setItem("CartItems", JSON.stringify(cartArr))
+
+}
 
 }

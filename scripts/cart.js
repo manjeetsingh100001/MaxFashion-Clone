@@ -1,14 +1,14 @@
-var cartproducts = JSON.parse(localStorage.getItem("cartproducts")) || [];  //cart array from localstorage
+var cartitems = JSON.parse(localStorage.getItem("CartItems")) //cart array from localstorage
 
-displayCart(cartproducts);
+displayCart(cartitems);
 
 //<--- Calling function and mapping CartItems--------->
 var trTotal = 0;
 
-function displayCart(cartproducts) {
+function displayCart(cartitems) {
   document.querySelector("tbody").textContent = "";
 
-  cartproducts.map(function (data, index) {
+  cartitems.map(function (data, index) {
     var tr = document.createElement("tr");    //main table row for appending all cart data
 
 
@@ -101,21 +101,21 @@ function displayCart(cartproducts) {
 //<------ Delete Items here----------->
 
 function deleteItems(index) {
-  cartproducts.splice(index, 1);
-  localStorage.setItem("CartItems", JSON.stringify(cartproducts));
-  displayCart(cartproducts);
+  cartitems.splice(index, 1);
+  localStorage.setItem("CartItems", JSON.stringify(cartitems));
+  displayCart(cartitems);
   subtotalShow()
-  cartLength(cartproducts)
+  cartLength(cartitems)
 }
 
 
 
 //<-----Cart length----->
-cartLength(cartproducts)
+cartLength(cartitems)
 
- function cartLength(cartproducts) {
+ function cartLength(cartitems) {
  
-  let count = cartproducts.length;
+  let count = cartitems.length;
   return count;
 };
 
@@ -129,14 +129,14 @@ cartLength(cartproducts)
 var totalSum = 0;
 subtotalShow()
 function subtotalShow(){
-   totalSum = cartproducts.reduce(function (acc, cv) {
+   totalSum = cartitems.reduce(function (acc, cv) {
     return acc + Number(cv.price);
   }, 0);
   console.log(trTotal)
   
   document.querySelector(
     "#subtotal"
-  ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartproducts)} items)`;
+  ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartitems)} items)`;
   }
 
 
@@ -150,7 +150,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     totalSum = Math.floor((70 / 100) * totalSum);
     document.querySelector(
       "#subtotal"
-    ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartproducts)} items)`;
+    ).textContent = `Subtotal: ₹ ${totalSum}.00 (${cartLength(cartitems)} items)`;
     alert("Coupon Applied Successfully");
   } else {
     alert("Please enter correct coupon code");

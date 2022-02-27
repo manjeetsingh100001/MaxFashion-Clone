@@ -75,7 +75,7 @@ function displayCart(cartitems) {
     //Product Image
     var tdImg = document.createElement("td");
     var img = document.createElement("img");
-    img.setAttribute("src", data.image);
+    img.setAttribute("src", data.image_url);
     tdImg.append(img);
 
     //Product name

@@ -1,8 +1,9 @@
-var cartitems = JSON.parse(localStorage.getItem("CartItems")) || [];
+var cartitems = JSON.parse(localStorage.getItem("CART")) || [];
 
-
+// two work remaining on add to basket remove from wishlist page and 
 
 var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
+console.log(cartArr)
 displayCart(cartitems);
 
 //<--- Calling function and mapping CartItems--------->
@@ -58,8 +59,6 @@ function deleteItems(index) {
   cartitems.splice(index, 1);
   localStorage.setItem("CartItems", JSON.stringify(cartitems));
   displayCart(cartitems);
-  subtotalShow();
-  cartLength(cartitems);
 }
 
 
@@ -70,7 +69,7 @@ function deleteItems(index) {
     cartArr.push(data);
     alert(data.name + "  " + "Added");
     localStorage.setItem("CartItems", JSON.stringify(cartArr));
-    // deleteItems(index)
+    deleteItems(index)
   }
   
 
@@ -78,10 +77,19 @@ function deleteItems(index) {
   let count = cartitems.length;
 console.log(count) ;
 
+//<---Remove All---->
+function removeAll(){
+  console.log(cartitems)
 
+cartitems.map((data, index) => {
+console.log(data)
+cartitems.splice(index, count);
+localStorage.setItem("CartItems", JSON.stringify(cartitems));
 
+});
+alert("Sucessfully removed all item")
+displayCart(cartitems);
 
-
-
+}
 
 

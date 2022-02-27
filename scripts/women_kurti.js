@@ -6,19 +6,16 @@ var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
 
  // sorting 
  function sortbyprice() {
+
      let select=document.getElementById("sortPriced");
+
      if(select.value=="Low") {
            women_kurti.sort(function(a,b){return a.price - b.price;});
      }
      if(select.value=="High") {
            women_kurti.sort(function(a,b){return b.price - a.price;});
      }
-  //    if(select.value=="default")
-  //    {
-  //        women_kurti.sort(function(){return women_kurti})
-  //     // displayData(women_kurti);
-  //    }
-
+ 
      displayData(women_kurti);
      console.log("women_kurti:",women_kurti);
 
@@ -26,9 +23,10 @@ var women_kurti = JSON.parse(localStorage.getItem("women_kurtes")) || [];
 
  
 
-function displayData(women_kurti){
+   function displayData(women_kurti) {
 
   //appending the product image to the container element.
+
 let container = document.getElementById("kurti_append");
 container.innerHTML = null;
 
@@ -71,9 +69,9 @@ women_kurti.map((data) => {
   basket.setAttribute("class", "hide");
 
   basket.innerText = "ADD TO BASKET";
-  basket.onclick = () =>{
+  basket.onclick = () => {
       localStorage.setItem("single_kurti",JSON.stringify(data));
-      alert("Added to cart");
+      // alert("Added to cart");
 
       //basket counter update function to write here. 
   }

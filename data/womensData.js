@@ -114,3 +114,4 @@ var womensDatas = [
     },
   ];
 localStorage.setItem("women_kurtes",JSON.stringify(womensDatas));
+

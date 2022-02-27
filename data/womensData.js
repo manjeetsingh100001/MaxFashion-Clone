@@ -113,5 +113,5 @@ var womensDatas = [
       strikedoffprice: 1799,
     },
   ];
+  
 localStorage.setItem("women_kurtes",JSON.stringify(womensDatas));
-

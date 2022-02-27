@@ -1,16 +1,17 @@
+/* main container div to   */
 #show {
     display: flex;
-    /* justify-content:space-between; */
+  
   }
   #price {
-    /* margin-bottom: 500px; */
+   
     margin-left: 30px;
     font-size: 28px;
     font-weight: bold;
     line-height: 30px;
   }
   #img {
-    /* display:flex; */
+  
     margin-left: 20px;
   }
   #p_div {
@@ -62,7 +63,7 @@
     color: red;
     border: 0;
     font-weight: bold;
-    /* margin-bottom: 10px; */
+    
   }
   #promo {
     margin: 20px;

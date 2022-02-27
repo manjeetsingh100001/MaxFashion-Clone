@@ -1,61 +1,56 @@
 // let creditcard = document.getElementById(creditcard).checked;
 
-console.log(creditcard.checked)
+console.log(creditcard.checked);
 
 // <----radio check only one condition---->
 function onlyOne(checkbox) {
-    var checkboxes = document.getElementsByName('check')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
-};
-
+  var checkboxes = document.getElementsByName("check");
+  checkboxes.forEach((item) => {
+    if (item !== checkbox) item.checked = false;
+  });
+}
 
 //<-------divs input hide & visible start-------->
 cards_hide_show.style.display = "none";
 //<------- cards details----->
 function showCardForm() {
-    cards_hide_show.style.display = "inline-block";
-};
+  cards_hide_show.style.display = "inline-block";
+}
 
 //<------- Address Box details----->
 add_box.style.display = "none";
-function showAddress(){
-add_box.style.display = "inline-block";
+function showAddress() {
+  add_box.style.display = "inline-block";
 }
 
 //<------- Coupon code 30% details----->
 promoForm.style.display = "none";
 function showInputbox() {
-    promoForm.style.display = "inline-block";
+  promoForm.style.display = "inline-block";
 }
 
 //<-------divs input hide & visible end-------->
 // let address = document.querySelector('form').addEventListener("submit", addressForm)
 
-
 // pay now onclick active and taking value of card details
 //& confirming cvv match
 
-function payNow(){
-    var cardHolderName = document.querySelector("#cardH").value;
+function payNow() {
+  var cardHolderName = document.querySelector("#cardH").value;
   var cardNumber = document.querySelector("#cardNum").value;
   var expMM = document.querySelector("#expMM").value;
   var expYear = document.querySelector("#expYear").value;
   var cvv = document.querySelector("#cvv").value;
 
-  console.log(cardHolderName,cardNumber,expMM,expYear,cvv)
- 
+  console.log(cardHolderName, cardNumber, expMM, expYear, cvv);
+
   if (cvv == 123) {
     alert("Congratulation! your payment is succesful");
     window.location.href = "thankyou.html";
-  }
-  else{
+  } else {
     alert("Invalid CVV");
   }
-
 }
-
 
 // cart right side CART details
 
@@ -86,22 +81,11 @@ function displayCart(cartitems) {
     var tdPrice = document.createElement("td");
     tdPrice.textContent = ` ₹ ${data.price}`;
 
-   
-
     var sel = document.createElement("p");
     sel.setAttribute("id", "qntySelect");
     sel.textContent = `Qty : ${1}`;
 
-
-  
-
- 
-
-   
-
-
-
-    tdName.append(sel)   
+    tdName.append(sel);
     tr.append(tdImg, tdName, tdPrice);
     document.querySelector("tbody").append(tr);
   });
@@ -112,8 +96,7 @@ function displayCart(cartitems) {
   //tdTotalPrice --> first for 1qty then update with sel * price
 }
 
-
-console.log(cartitems)
+console.log(cartitems);
 
 //<----------Onchage qty subTotal Price update--->
 
@@ -123,7 +106,8 @@ function deleteItems(index) {
   cartitems.splice(index, 1);
   localStorage.setItem("CartItems", JSON.stringify(cartitems));
   displayCart(cartitems);
-  subtotalShow();e
+  subtotalShow();
+  
   cartLength(cartitems);
 }
 
@@ -136,37 +120,38 @@ function cartLength(cartitems) {
 }
 
 //<----------show total Price----------->
-// var loccalTotal = JSON.parse(localStorage.getItem("trTotal"));
+
 
 var totalSum = 0;
-subtotalShow()
-function subtotalShow(){
-   totalSum = cartitems.reduce(function (acc, cv) {
+subtotalShow();
+function subtotalShow() {
+  totalSum = cartitems.reduce(function (acc, cv) {
     return acc + Number(cv.price);
   }, 0);
-  console.log(trTotal)
+  console.log(trTotal);
 
   document.querySelector(
     "#subtotal"
   ).textContent = `Total: ₹ ${totalSum}.00 (${cartLength(cartitems)} items)`;
-  }
+}
 
 //<----------- Apply Coupon here------------->
 
-document.querySelector("#promoForm").addEventListener("submit", function (event) {
-  event.preventDefault();
+document
+  .querySelector("#promoForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  var coupon_no = document.querySelector("#CouponInput").value;
-  if (coupon_no == "masai30") {
-    totalSum = Math.floor((70 / 100) * totalSum);
-    document.querySelector(
-      "#subtotal"
-    ).textContent = `Total: ₹ ${totalSum}.00 (${cartLength(
-      cartitems
-    )} items)`;
-    alert("Coupon Applied Successfully");
-  } else {
-    alert("Please enter correct coupon code");
-  }
-});
-
+    var coupon_no = document.querySelector("#CouponInput").value;
+    if (coupon_no == "masai30") {
+      totalSum = Math.floor((70 / 100) * totalSum);
+      document.querySelector(
+        "#subtotal"
+      ).textContent = `Total: ₹ ${totalSum}.00 (${cartLength(
+        cartitems
+      )} items)`;
+      alert("Coupon Applied Successfully");
+    } else {
+      alert("Please enter correct coupon code");
+    }
+  });

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+</head>
+<style>
+    body{
+        background-color: white;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: lighter;
+
+    }
+    #thankyou_container{
+      width: 85%;
+      margin: auto;
+        display: flex;
+        height: 700px;
+        align-items: center;
+      
+    }
+    .left_Div{
+        flex: 6;
+        height: 500px;
+    }
+    .thankyoutext_img{
+        display: flex;
+        align-items: center;
+    }
+    .thankyoutext_img  img{
+        width: 10%;
+        height: 100%;
+        margin-right: 4%;
+    } 
+
+    
+    .right_Div{
+        flex: 4;
+        height: 500px;
+       
+    }
+    .right_Div img{
+      width: 100%;
+      max-height: 100%;
+    }
+
+    /*<-----------contact or need help text---------> */
+#Contact_Text {
+  font-size: 12px;
+}
+#Contact_Text > p {
+  font-size: 16px;
+  color: black;
+
+}
+.icon_contact_flex {
+  align-items: center;
+  display: flex;
+}
+#Contact_Text img {
+  margin-right: 5px;
+  height: 18px;
+}
+</style>
+<body>
+    <div id="thankyou_container">
+        <div class="left_Div">
+            <div class="thankyoutext_img">
+                <img src="./resources/green right tick.png" alt="" srcset="">
+                <div>
+                    <h2>Thank you, <span class="showName"></span>!</h2>
+                    <p>We appreciate your order.</p>
+                </div>
+            </div>
+            <p>Your order number is <span class="orderNo" style="color: blue"></span></p>
+            <p>You'll get it within <span style="color: green;">5-7 business days</span></p>
+            <br>
+            <div id="Contact_Text">
+                <p>Have a questions? We'd love to help</p>
+                <div class="icon_contact_flex">
+                  <img src="./resources/ui-call.svg" alt="" srcset="" />
+                  <p>Call Customer Support at 1800-123-1444</p>
+                </div>
+                <div class="icon_contact_flex">
+                  <img src="./resources/email.svg" alt="" srcset="" />
+                  <p>Write to us</p>
+                </div>
+          
+                <div class="icon_contact_flex">
+                  <img src="./resources/spinner-alt-3.svg" alt="" srcset="" />
+                  <p>Return Policy</p>
+                </div>
+              </div>
+        </div>
+        <div class="right_Div">
+          <img src="./resources/thankyou bag img.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+  let showName = document.querySelector(".showName");
+  let orderNo = document.querySelector(".orderNo");
+
+  let order = Math.floor((Math.random() * 10**10) + 1);
+  orderNo.innerHTML = order;
+  console.log(order)
+
+  let name = JSON.parse(localStorage.getItem("userName"));
+  console.log(name)
+  showName.innerHTML = "Akshay";
+</script>

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
   </head>
   <link rel="stylesheet" href="./styles/checkout.css" />
-
+  <link rel="stylesheet" href="./styles/checkout.meadiaQuery.css" />
   <body>
     <!-- header start -->
     <div id="headerLogo">
@@ -20,7 +25,7 @@
         <p>Monday-Saturday, 09:00AM - 07:00PM</p>
       </div>
     </div>
-    <div>
+    <div class="shippinTextOnly">
       <h2>Select a shipping method</h2>
     </div>
     <!-- header end -->
@@ -30,38 +35,33 @@
       <!-- left side div start -->
       <div id="leftside_div">
         <div id="shippingdetails_box">
-      
           <div>
-            <p>Home Delivery</p>
+            <h4>Home Delivery</h4>
             <p>Get your product delivered to your home</p>
           </div>
 
           <div>
-            <p>Click & Collect</p>
+            <h4>Click & Collect</h4>
             <p>Collect your from a store of your choice</p>
           </div>
-
         </div>
-
-
 
         <!-- billing address -->
         <div id="Billing_add">
-            <select name="address" id="home_select">
-              <option value="add">Home</option>
-            </select>
-            <div id="show_add" onclick="showAddress()">
-                <p>+ Add new billing address</p>
-            </div>
+          <select name="address" id="home_select">
+            <option value="add">Home</option>
+          </select>
+          <div id="show_add" onclick="showAddress()">
+            <p>+ Add new billing address</p>
           </div>
-
+        </div>
 
         <div id="add_box">
           <!-- <p>Select your shipping address</p> -->
           <p>Add your shipping address</p>
-          <form >
+          <form>
             <label for="">Name</label> <br />
-            <input type="text"  /><br />
+            <input type="text" /><br />
 
             <label for="mob">Mobile Number</label><br />
             <input type="number" maxlength="10" /><br />
@@ -89,10 +89,10 @@
             <label for=""
               >Address Type <span style="color: grey">(Optional)</span></label
             ><br />
-            <div class="home_office" >
-            <input type="checkbox" /><label>Home</label>
-            <input type="checkbox" /><label for="">Office</label>
-        </div>
+            <div class="home_office">
+              <input type="checkbox" /><label>Home</label>
+              <input type="checkbox" /><label for="">Office</label>
+            </div>
           </form>
         </div>
 
@@ -103,7 +103,7 @@
           <!-- </div> -->
 
           <div class="paymentOpt">
-            <input type="radio" name="check" onclick="showCardForm()"/>
+            <input type="radio" name="check" onclick="showCardForm()" />
             <img src="./resources/cards cc dc.png" alt="cards" />
             <div>
               <p>Credit/Debit Card</p>
@@ -111,72 +111,74 @@
             </div>
           </div>
 
-
           <div id="cards_hide_show">
-            <input type="radio" id="creditcard" name="check"/>
+            <input type="radio" id="creditcard" name="check" />
             <label for="creditcard">Credit Card</label>
-            <input type="radio" id="debitcard" name="check"/>
+            <input type="radio" id="debitcard" name="check" />
             <label for="debitcard">Debit Card</label>
-         
 
-        <div id="cardInput_box">
-          <label for="Number">Card Number</label> <br />
-          <input type="text" id="cardNum" placeholder="Enter name on card"/> <br />
-          <label for="Number">Name on Card</label> <br />
-          <input type="text" id="cardH" placeholder="Enter card number"/> <br />
-          <div class="expiryDate_cvvText">
-            <p>Expiry Date</p>
-            <p>CVV</p>
+            <div id="cardInput_box">
+              <label for="Number">Card Number</label> <br />
+              <input
+                type="text"
+                id="cardNum"
+                placeholder="Enter name on card"
+              />
+              <br />
+              <label for="Number">Name on Card</label> <br />
+              <input type="text" id="cardH" placeholder="Enter card number" />
+              <br />
+              <div class="expiryDate_cvvText">
+                <p>Expiry Date</p>
+                <p>CVV</p>
+              </div>
+
+              <div id="expiryDate_cvvDiv">
+                <div id="select_option_div">
+                  <select name="" id="expMM">
+                    <option value="MM">MM</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <select name="" id="expYear">
+                    <option value="YYYY">YYYY</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                  </select>
+                </div>
+                <input type="text" id="cvv" placeholder="CVV(123)" />
+              </div>
+
+              <div class="savethhiscardText">
+                <input type="checkbox" />
+                <p>Save this card for a faster checkout experience</p>
+              </div>
+            </div>
           </div>
-          
-          <div id="expiryDate_cvvDiv">
-
-            <div id="select_option_div">
-              <select name="" id="expMM">
-                <option value="MM">MM</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-              <select name="" id="expYear">
-                <option value="YYYY">YYYY</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-                <option value="2031">2031</option>
-                <option value="2032">2032</option>
-            </select>
         </div>
-        <input type="text" id="cvv" placeholder="CVV(123)"/>
-          </div>
-
-          <div class="savethhiscardText">
-            <input type="checkbox" />
-            <p>Save this card for a faster checkout experience</p>
-          </div>
-        </div>
-    </div>
-</div>
-
 
         <!-- others payment option  -->
         <div class="paymentOpt">
-          <input type="radio" name="check"/>
+          <input type="radio" name="check" />
           <img src="./resources/emi calender.png" alt="calender" />
           <div>
             <p>EMI</p>
@@ -185,7 +187,7 @@
         </div>
 
         <div class="paymentOpt">
-          <input type="radio" name="check"/>
+          <input type="radio" name="check" />
           <img src="./resources/cash on delivery.png" alt="Cash" />
           <div>
             <p>Cash On Delivery</p>
@@ -194,7 +196,7 @@
         </div>
 
         <div class="paymentOpt">
-          <input type="radio" name="check"/>
+          <input type="radio" name="check" />
           <img src="./resources/net banking.png" alt="netBanking" />
           <div>
             <p>Net Banking</p>
@@ -203,7 +205,7 @@
         </div>
 
         <div class="paymentOpt">
-          <input type="radio" name="check"/>
+          <input type="radio" name="check" />
           <img src="./resources/wallets.png" alt="wallets" />
           <div>
             <p>Wallets</p>
@@ -212,7 +214,7 @@
         </div>
 
         <div class="paymentOpt">
-          <input type="radio" name="check"/>
+          <input type="radio" name="check" />
           <img src="./resources/bhimupi.png" alt="upi" />
           <div>
             <p>UPI</p>
@@ -229,27 +231,31 @@
         </div>
 
         <form id="promoForm">
-          <input id="CouponInput" type="text" placeholder="Promo Code(masai30)" />
+          <input
+            id="CouponInput"
+            type="text"
+            placeholder="Promo Code(masai30)"
+          />
           <input type="submit" value="Apply" />
         </form>
 
         <div class="paymentOpt" id="Gifticons_flextText">
           <img src="./resources/gift card icon.jpeg" alt="" />
-          <p >Have a Gift Card?  <a onclick="showInputbox()" id="spanUsecodeclick">Use it here.</a></p>
+          <p>
+            Have a Gift Card?
+            <a onclick="showInputbox()" id="spanUsecodeclick">Use it here.</a>
+          </p>
         </div>
 
         <div id="payNow_div">
-          <p>
-            By clicking on Proceed to Payment, you agree to our Terms and
-            Conditions
-          </p>
-          <input type="submit"  onclick="payNow()" value="Pay Now" />
+          <p>By clicking on Pay Now, you agree to our Terms and Conditions</p>
+          <input type="submit" onclick="payNow()" value="Pay Now" />
         </div>
 
         <div id="securityDescription">
           <img src="./resources/secure lock .png" alt="secure" />
-          <div style="margin-left: 20px;">
-            <p style="color: gray;">
+          <div style="margin-left: 20px">
+            <p style="color: gray">
               Your credit card details are securely encrypted and passed
               directly to our PCI DSS compliant Payment Gateway for processing.
               We only store your credit card's last 4 digits and the expiration
@@ -259,7 +265,7 @@
 
             <p>© 2021 RNA Intellectual Property Limited.</p>
 
-            <p >Privacy Policy - Terms of Use - Terms & Conditions</p>
+            <p>Privacy Policy - Terms of Use - Terms & Conditions</p>
           </div>
         </div>
       </div>
@@ -284,11 +290,9 @@
             </table>
           </div>
 
-
           <div id="subTotal_Div">
             <p id="subtotal"></p>
-    
-          
+
             <div id="paytImgs">
               <img src="./resources/payment options.png" alt="" srcset="" />
               <p style="color: gray">
@@ -296,8 +300,6 @@
               </p>
             </div>
           </div>
-
-
         </div>
       </div>
       <!-- right side div end -->

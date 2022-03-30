@@ -1,13 +1,18 @@
 #headerLogo {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid silver;
   display: flex;
   text-align: right;
   justify-content: space-between;
   padding: 0 2%;
+  font-size: 13px;
+  background-color: white;
 }
 #checkout_container {
-  padding: 0 20px;
+  padding: 0 3%;
   display: flex;
 }
 #leftside_div {
@@ -20,12 +25,11 @@
   width: 95%;
   display: flex;
   border: 1px solid silver;
-  justify-content: space-between;
 }
 #shippingdetails_box div {
-  padding-left: 10px;
-  width: 40%;
+  width: 50%;
   border-right: 1px solid silver;
+  text-align: center;
 }
 #add_box {
   width: 100%;
@@ -71,17 +75,21 @@
 #Billing_add {
   width: 95%;
   display: flex;
-
   border: 1px solid silver;
+  text-align: center;
   justify-content: space-around;
 }
+
 #Billing_add > select {
   text-align: center;
   background-color: white;
   border: none;
-
-  width: 50%;
+  width: 20%;
   font-size: 20px;
+  text-align: center;
+}
+#show_add {
+  text-align: center;
 }
 
 #payNow_div {
@@ -192,7 +200,6 @@ table img {
 /* <----------Subtotal Div and Checkout Btn---------> */
 #subTotal_Div {
   margin-top: 3%;
-
   text-align: center;
   color: black;
   font-weight: lighter;

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,122 +19,120 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/styles/main.css" />
-  
+
     <link rel="stylesheet" href="/styles/cart.css" />
+    <link rel="stylesheet" href="./styles/cart.mediaQuery.css">
     <title>cart page</title>
 
   </head>
-
   <body>
     <!-- navbar  main  section (importing) -->
     <div id="nav_container"></div>
 
-    <div id="main_container">
-
-    <div id="section_heading_title">
-      <div>
-        <p>Your Shopping Basket</p>
-      </div>
-      <div class="Offer_text">
-        <span>Get the offer</span>
-        <p>Flat 200 Off on 1999 & above, code- MAX200</p>
-      </div>
-      <div class="Offer_text">
-        <span>Get the offer</span>
-        <p>
-          Flat 100 Off on 999 & above orders, code- NEW100 (First purchase only)
-        </p>
-      </div>
-    </div>
-    <div id="Cart_Container">
-      <div class="tableheading">
-        <table>
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Description</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-
-      <div id="subTotal_Div">
-        <p id="subtotal"></p>
-
-        <div id="checkOut_div">
-          <button id="checkoutBtn">
-            <a
-              href="./checkout.html"
-              style="color: white; text-decoration: none"
-              >Checkout Now</a
-            >
-          </button>
+    <!-- <div id="main_container"> -->
+      <div id="section_heading_title">
+        <div>
+          <p>Your Shopping Basket</p>
         </div>
-        <div id="paytImgs">
-          <img src="./resources/payment options.png" alt="" srcset="" />
-          <p style="color: rgb(184, 184, 184)">
-            Earn up to 4 Landmark Rewards points on this order.
+        <div class="Offer_text">
+          <span>Get the offer</span>
+          <p>Flat 200 Off on 1999 & above, code- MAX200</p>
+        </div>
+        <div class="Offer_text">
+          <span>Get the offer</span>
+          <p>
+            Flat 100 Off on 999 & above orders, code- NEW100 (First purchase
+            only)
           </p>
         </div>
       </div>
+      <div id="Cart_Container">
+        <div class="tableheading">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div id="subTotal_Div">
+          <p id="subtotal"></p>
+
+          <div id="checkOut_div">
+            <button id="checkoutBtn">
+              <a
+                href="./checkout.html"
+                style="color: white; text-decoration: none"
+                >Checkout Now</a
+              >
+            </button>
+          </div>
+          <div id="paytImgs">
+            <img src="./resources/payment options.png" alt="" srcset="" />
+            <p style="color: rgb(184, 184, 184)">
+              Earn up to 4 Landmark Rewards points on this order.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Coupon-div">
+        <div>Whishlist <a href="wishlist.html">Click here</a></div>
+        <br />
+        <div class="Gifticons_flextText">
+          <img src="./resources/gift icon cart page.jpeg" alt="" srcset="" />
+          <p>
+            Got a Promo Code?
+            <a onclick="showInputbox()" id="spanUsecodeclick">Use it here</a>
+          </p>
+        </div>
+        <form id="formForm">
+          <input
+            id="CouponInput"
+            type="text"
+            placeholder="Promo Code(masai30)"
+          />
+          <input type="submit" value="Apply" />
+        </form>
+
+        <div class="Gifticons_flextText">
+          <img src="./resources/gift card icon.jpeg" alt="" />
+          <p>Have a Gift Card? Redeem it at checkout.</p>
+        </div>
+      </div>
+      <div id="Contact_Text">
+        <p>Need help? We're here for you.</p>
+        <div class="icon_contact_flex">
+          <img src="./resources/ui-call.svg" alt="" srcset="" />
+          <p>Call Customer Support at 1800-123-1444</p>
+        </div>
+        <div class="icon_contact_flex">
+          <img src="./resources/email.svg" alt="" srcset="" />
+          <p>Write to us</p>
+        </div>
+
+        <div class="icon_contact_flex">
+          <img src="./resources/spinner-alt-3.svg" alt="" srcset="" />
+          <p>Return Policy</p>
+        </div>
+      </div>
     </div>
 
-    
-
-    <div id="Coupon-div">
-      <div>Whishlist <a href="wishlist.html">Click here</a> </div>
-      <br>
-      <div class="Gifticons_flextText">
-        <img src="./resources/gift icon cart page.jpeg" alt="" srcset="" />
-        <p>
-          Got a Promo Code?
-          <a onclick="showInputbox()" id="spanUsecodeclick">Use it here</a>
-        </p>
-      </div>
-      <form id="formForm">
-        <input id="CouponInput" type="text" placeholder="Promo Code(masai30)" />
-        <input type="submit" value="Apply" />
-      </form>
-
-
-
-      <div class="Gifticons_flextText">
-        <img src="./resources/gift card icon.jpeg" alt="" />
-        <p>Have a Gift Card? Redeem it at checkout.</p>
-      </div>
-    </div>
-    <div id="Contact_Text">
-      <p>Need help? We're here for you.</p>
-      <div class="icon_contact_flex">
-        <img src="./resources/ui-call.svg" alt="" srcset="" />
-        <p>Call Customer Support at 1800-123-1444</p>
-      </div>
-      <div class="icon_contact_flex">
-        <img src="./resources/email.svg" alt="" srcset="" />
-        <p>Write to us</p>
-      </div>
-
-      <div class="icon_contact_flex">
-        <img src="./resources/spinner-alt-3.svg" alt="" srcset="" />
-        <p>Return Policy</p>
-      </div>
-    </div>
-  </div>
-
-     <!-- footer  main  section (importing) -->
-     <div id="footer_container"></div>
-
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
   </body>
 </html>
 
 <!-- js part of cart-->
 
 <script src="/scripts/cart.js"></script>
-
 
 <script type="module">
   //importing Nav-bar part

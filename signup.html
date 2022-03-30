@@ -53,11 +53,11 @@
           brands
         </p>
 
-        <form id="submit">
-          <input type="text" name="" id="name" placeholder="Name" />
-          <input type="text" id="email" placeholder="Email" required />
-          <input type="text" id="num" placeholder="Mobile" required />
-          <input id="pass" type="text" placeholder="Password" required />
+        <form id="submit" action="/register" method="post">
+          <input type="text"  id="name" placeholder="Name" value="name" />
+          <input type="text" id="email" placeholder="Email" required value="email"/>
+          <input type="text" id="num" placeholder="Mobile" required value="mobile"/>
+          <input id="pass" type="text" placeholder="Password" required  value="password"/>
           <p>
             By creating your account you agree to our
             <a href="https://www.maxfashion.in/in/en/termsandconditions"

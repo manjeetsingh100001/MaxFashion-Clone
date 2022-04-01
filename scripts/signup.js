@@ -25,6 +25,8 @@ console.log({regiseter : register_data});
       }
     );
 
+      console.log("res" , res);
+
     let data = await res.json();
 
     if(data){
@@ -32,7 +34,7 @@ console.log({regiseter : register_data});
       console.log(data);
       alert("congratulations! your sign-up has successful.")
     }
-    window.location.href = "login.html";
+    // window.location.href = "login.html";
   } catch (err) {
     alert(err.message)
     console.log(err.message);

@@ -52,7 +52,7 @@ async function Login (event) {
 
     let data = await res.json();
     console.log("data:", data);
-    window.location.href = "index.html";
+    // window.location.href = "index.html";
 
     // getUser(login_data.name, data.token);
   } catch (err) {

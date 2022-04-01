@@ -1,34 +1,55 @@
-// sign up process part 
-var userStack =
-JSON.parse(localStorage.getItem("userDataBase")) || [];
+//api link - https://masai-api-mocker.herokuapp.com/ //register api link --> https://masai-api-mocker.herokuapp.com/auth/register //Login api link --> https://masai-api-mocker.herokuapp.com/auth/login
 
-  document.querySelector("#submit").addEventListener("submit", function (event) {
+//   Registering user
+document.querySelector("form").addEventListener("submit", Register);
+async function Register(event){
+  event.preventDefault()
+  try {
+    let register_data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      mobile: document.getElementById("num").value,
+      password: document.getElementById("pass").value,
+    };
+    register_data = JSON.stringify(register_data);
+console.log({regiseter : register_data});
+    let res = await fetch(
+      "http://localhost:5000/register",
+      {
+        method: "POST",
+        body: register_data,
 
-  event.preventDefault();
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
-  var name = document.querySelector("#name").value;
-  var email = document.querySelector("#email").value;
-  var password = document.querySelector("#pass").value;
+      console.log("res" , res);
 
-  function userData(name, email, password) {
-    this.name = name;
-    this.email = email;
-    this.password = password;
+    let data = await res.json();
+
+    if(data){
+
+      console.log(data);
+      alert("congratulations! your sign-up has successful.")
+    }
+    // window.location.href = "login.html";
+  } catch (err) {
+    alert(err.message)
+    console.log(err.message);
   }
-
-  let user = new userData(name, email, password);
-
-  userStack.push(user);
-  alert("Registration Successfully");
-
-  
-  window.location.href = "login.html";
+};
 
 
 
-  console.log(userStack);
-  localStorage.setItem("userDataBase", JSON.stringify(userStack));
-});
 
-
-
+let showuser = document.getElementById("showuser");
+function showUser(data) {
+  let user = "Username:" + " " + data;
+  if (data != undefined) {
+    showuser.textContent = null;
+    showuser.append(user);
+  }
+}
+// container.append(user)

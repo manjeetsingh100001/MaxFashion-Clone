@@ -41,7 +41,7 @@ function nav() {
                 <li>
                     <p id="hi_user"></p>
                     <p>
-                        <a  href= "signup.html">SignUp</a>
+                        <a  href= "signup.html" id="hi">SignUp</a>
                     </p>
                 </li>
                 <li>|</li>

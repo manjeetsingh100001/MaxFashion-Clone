@@ -37,6 +37,15 @@
   import nav from "./components/navbar.js";
   let nav_container = document.getElementById("nav_container");
   nav_container.innerHTML = nav();
+  //greet user
+  var uName = localStorage.getItem("username");
+  if(uName==null){
+    let userName = document.getElementById("hi");
+    userName.innerText = "SignUp";
+  }else{
+    let userName = document.getElementById("hi");
+  userName.innerText = `Hi ${uName}`;
+  }
 
   //importing banner part
   import banner from "./components/banner.js";

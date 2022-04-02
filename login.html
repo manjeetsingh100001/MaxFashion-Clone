@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -13,12 +18,12 @@
       src="https://kit.fontawesome.com/498dbb26da.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <title>Login - Page</title>
-</head>
-<style>
-    #logIn-container{
+  </head>
+  <style>
+    #logIn-container {
       width: 60%;
       height: 300px;
       margin: auto;
@@ -26,48 +31,45 @@
       margin-bottom: 20px;
     }
   </style>
-<body>
-
+  <body>
     <!-- navbar  main  section (importing) -->
     <div id="nav_container"></div>
 
     <div id="logIn-container">
-    
-        <div id="logIn-form-div">
-            <h1>Log-In</h1>
-            <p>
-                Fill Your Credentials and Enjoy Shopping!!! 
-            </p>
+      <div id="logIn-form-div">
+        <h1>Log-In</h1>
+        <p>Fill Your Credentials and Enjoy Shopping!!!</p>
 
-            <form id="submit">
-                <input type="email" id="log-email" placeholder="Email"  />
-                <input id="log-pass" type="current-password" placeholder="Password" />
-                <p>
-                    By creating your account you agree to our
-                    <a href="https://www.maxfashion.in/in/en/termsandconditions"><br />
-                        Terms and conditions</a>
-                </p>
-                <input type="submit" id="register" value="Submit" />
-              </form>
-        </div>
+        <form id="submit">
+          <input type="email" id="log-email" placeholder="Email" />
+          <input id="log-pass" type="current-password" placeholder="Password" />
+          <p>
+            By creating your account you agree to our
+            <a href="https://www.maxfashion.in/in/en/termsandconditions"
+              ><br />
+              Terms and conditions</a
+            >
+          </p>
+          <input type="submit" id="register" value="Submit" />
+        </form>
+      </div>
     </div>
 
-     <!-- footer  main  section (importing) -->
-     <div id="footer_container"></div>
-
-</body>
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
+  </body>
 </html>
 
 <script src="/scripts/login.js"></script>
 
 <script type="module">
-    //importing Nav-bar part
+  //importing Nav-bar part
   import nav from "./components/navbar.js";
   let nav_container = document.getElementById("nav_container");
   nav_container.innerHTML = nav();
 
-    // importing footer
-    import footer from "./components/footer.js";
-    let footer_container = document.getElementById("footer_container");
-    footer_container.innerHTML = footer();
+  // importing footer
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
 </script>

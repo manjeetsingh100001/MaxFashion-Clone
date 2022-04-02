@@ -97,7 +97,20 @@ function appendprod(prodarr) {
     promo_text.innerText =
       "Get Rs.200 Off on 1999 & above orders, code- MAX200 | Rs. 100 Off on 999 & above (First Purchase Only), code- NEW100";
 
-    price_details.append(p_div, size, basket, favourite, promotion, promo_text);
+      let overview= document.createElement("div");
+      overview.id="overview";
+
+      // let overview_title = document.createElement("p");
+      // overview_title.innerText="Overview";
+      // overview_title.id="overview_title";
+
+      // let overview_text= document.createElement("p");
+      // // overview_text.id="overview_text";
+      // overview_text.innerText=el.overview;
+
+      // overview.append(overview_title,overview_text);
+
+    price_details.append(p_div, size, basket, favourite, promotion, promo_text, overview);
 
     cont_div.append(image, price_details);
 

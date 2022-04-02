@@ -1,6 +1,6 @@
 
 
- let url = `http://localhost:5000/products`;
+ let url = `http://localhost:5000/mens`;
 
  async function FetchApi() {
  
@@ -43,14 +43,14 @@
 // sub_category: "Tops "
 // _id: "6244480900b2438e325e2d23"
 
-function displayData(women_kurti){
+function displayData(men_shirt){
 
   //appending the product image to the container element.
 let container = document.getElementById("product_append");
 container.innerHTML = null;
 
 
-women_kurti.map((data) => {
+men_shirt.map((data) => {
 
          
   let div = document.createElement("div");
@@ -106,7 +106,7 @@ women_kurti.map((data) => {
 
   div.onclick = () => {
     localStorage.setItem("id", (data._id));
-    window.location.href = "singleproduct.html";
+    window.location.href = "SinglemenShirt.html";
   };
 
      container.append(div2);

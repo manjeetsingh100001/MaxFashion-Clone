@@ -108,16 +108,16 @@ function displayCart(cartItems) {
     //Product Image
     var tdImg = document.createElement("td");
     var img = document.createElement("img");
-    img.setAttribute("src", data.itemImg);
+    img.setAttribute("src", data.imageURL);
     tdImg.append(img);
 
     //Product name
     var tdName = document.createElement("td");
-    tdName.textContent = data.itemName;
+    tdName.textContent = data.productName;
 
     //product price
     var tdPrice = document.createElement("td");
-    tdPrice.textContent = ` ₹ ${data.itemPrice}`;
+    tdPrice.textContent = ` ₹ ${data.price}`;
 
     var sel = document.createElement("p");
     sel.setAttribute("id", "qntySelect");
@@ -149,7 +149,7 @@ var totalSum = 0;
 
 function subtotalShow(data) {
   totalSum = data.reduce(function (acc, cv) {
-    return acc + Number(cv.itemPrice);
+    return acc + Number(cv.price);
   }, 0);
   console.log(trTotal);
 

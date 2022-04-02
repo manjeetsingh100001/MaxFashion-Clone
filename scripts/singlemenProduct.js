@@ -1,6 +1,6 @@
 
 let id=localStorage.getItem("id")
-let url = `http://localhost:5000/products/${id}`;
+let url = `http://localhost:5000/mens/${id}`;
 console.log(id);
 async function FetchApi() {
 

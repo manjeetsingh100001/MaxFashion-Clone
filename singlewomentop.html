@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="/styles/singleproduct.css" />
+    <link rel="stylesheet" href="./styles/singlewomentop.css" />
+
     <title>Top & Tees</title>
   </head>
   <body>
@@ -30,12 +36,12 @@
   nav_container.innerHTML = nav();
   //greet user
   var uName = localStorage.getItem("username");
-  if(uName==null){
+  if (uName == null) {
     let userName = document.getElementById("hi");
     userName.innerText = "SignUp";
-  }else{
+  } else {
     let userName = document.getElementById("hi");
-  userName.innerText = `Hi ${uName}`;
+    userName.innerText = `Hi ${uName}`;
   }
 
   // importing footer part
@@ -44,4 +50,4 @@
   footer_container.innerHTML = footer();
 </script>
 
-<script src="./scripts/singleproduct.js"></script>
+<script src="./scripts/singlewomentop.js"></script>

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,15 +45,20 @@
       </select>
     </div>
 
+      <div id="sorting_and_filter_Div">
+        <select id="sortPriced" onchange="sortbyprice()">
+          <option value="">Sort by Price</option>
+          <!-- <option value="default">Default</option> -->
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
+      </div>
 
       <div id="product_append"></div>
-
-
     </div>
 
     <!-- footer  main  section (importing) -->
     <div id="footer_container"></div>
-    
   </body>
 </html>
 <!-- <script src="./data/womensData.js"></script> -->
@@ -59,16 +69,16 @@
   import nav from "./components/navbar.js";
   let nav_container = document.getElementById("nav_container");
   nav_container.innerHTML = nav();
-  //greet user
-  var uName = localStorage.getItem("username");
-  if(uName==null){
-    let userName = document.getElementById("hi");
-    userName.innerText = "SignUp";
-  }else{
-    let userName = document.getElementById("hi");
-  userName.innerText = `Hi ${uName}`;
-  }
 
+  //greet user
+  var uName = localStorage.getItem("userName");
+  if (uName == null) {
+    let userName = document.getElementById("hi");
+    userName.innerText = "SignUp-SignIn";
+  } else {
+    let userName = document.getElementById("hi");
+    userName.innerText = `Hi ${uName}`;
+  }
 
   // importing footer part
   import footer from "./components/footer.js";

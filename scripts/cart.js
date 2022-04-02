@@ -33,16 +33,16 @@ function displayCart(cartitems) {
     //Product Image
     var tdImg = document.createElement("td");
     var img = document.createElement("img");
-    img.setAttribute("src", data.itemImg);
+    img.setAttribute("src", data.imageURL);
     tdImg.append(img);
 
     //Product name
     var tdName = document.createElement("td");
-    tdName.textContent = data.itemName;
+    tdName.textContent = data.productName;
 
     //product price
     var tdPrice = document.createElement("td");
-    tdPrice.textContent = `₹  ${data.itemPrice} .00`;
+    tdPrice.textContent = `₹  ${data.price} .00`;
 
     // <------Creating Elements for select and options----->
     var sel_div = document.createElement("div");
@@ -84,15 +84,15 @@ function displayCart(cartitems) {
 
     //Total price for 1 qty
     var tdTotalPrice = document.createElement("td");
-    tdTotalPrice.innerHTML = `₹ ${data.itemPrice} .00`;
+    tdTotalPrice.innerHTML = `₹ ${data.price} .00`;
 
-    obj[data._id] = data.itemPrice; //storing ITEM-id & price
+    obj[data._id] = data.price; //storing ITEM-id & price
     //Total price updating as per qty
     var tdp = document.createElement("td");
     tdp.setAttribute("id", "totalPriceVal");
 
     sel.addEventListener("change", () => {
-      trTotal = data.itemPrice * sel.value; //multiplying
+      trTotal = data.price * sel.value; //multiplying
       hellofunction(trTotal, data._id); //updating sub totoal
       tdTotalPrice.innerHTML = "";
       tdp.textContent = `₹ ${trTotal} .00`;
@@ -114,8 +114,8 @@ function displayCart(cartitems) {
 }
 
 //<----------Onchage qty subTotal Price update--->
-function hellofunction(itemPrice, id) {
-  obj[id] = itemPrice;
+function hellofunction(price, id) {
+  obj[id] = price;
   subtotalShow(); //calling and refreshing subtotal price
 }
 // let sum = 0;
@@ -126,33 +126,29 @@ function hellofunction(itemPrice, id) {
 // },10000)
 
 //<------ Delete Items here----------->
-function deleteItems(id) {
+async function deleteItems(id) {
   console.log(id);
-  let url = `http://localhost:5000/carts/${id}`;
+  await fetch(`http://localhost:5000/carts/${id}`, {
+    method: 'DELETE',
+  })
+  .then(res => res.text()) 
+  .then(res => console.log(res))
+  await FetchApi();
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("DELETE", url);
-
-  xhr.setRequestHeader("Accept", "*/*");
-  xhr.setRequestHeader(
-    "Authorization",
-    "Bearer mt0dgHmLJMVQhvjpNXDyA83vA_PxH23Y"
-  );
-
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      console.log(xhr.status);
-      console.log(xhr.responseText);
-
-      FetchApi();
-    }
-  };
-  xhr.send();
+  setTimeout( function(){
+      subtotalShow();
+      console.log("Hello");
+    },3000)
+ 
 }
 
 //<-----Cart length----->
 function cartLength(cartitems) {
   let count = cartitems.length;
+   if(count == 0){
+     alert("Your cart is empty please add some product");
+     window.location.href = "../index.html"
+   }
   return count;
 }
 

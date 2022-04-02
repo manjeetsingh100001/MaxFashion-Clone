@@ -1,0 +1,89 @@
+@media only screen and (min-device-width: 0px) and (max-device-width: 940px) {
+    *{
+  text-decoration: none;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 1px;
+        border: 3px solid red;
+      }
+      .nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style-type: none;
+      justify-content: space-between;
+      }
+      .black-container .white-container {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .white-container {
+        background-color: rgb(249, 249, 249);
+      }
+      .nav .black-container,
+      .white-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 4px 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .white-right-menu a,   .white-left-menu a {
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        transition: all 0.3s ease-in-out;
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+      .black-container {
+        background-color: black;
+        color: white;
+      }
+      .black-right-menu li {
+        color: white;
+        padding: 5px 10px;
+        transition: all 0.3s ease-in-out;
+        font-size: 9px;
+        letter-spacing: 2px;
+      }
+      .black-left-menu li {
+        color: white;
+        padding: 5px 10px;
+        transition: all 0.3s ease-in-out;
+        font-size: 9px;
+        letter-spacing: 2px;
+      }
+      .black-container a,
+      li:hover {
+        cursor: pointer;
+      }
+      .white-left-menu li {
+        color: black;
+        padding: 3px 10px;
+        transition: all 0.3s ease-in-out;
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+      .white-left-menu img {
+          width: 50%;
+      }
+      .white-right-menu li {
+        color: black;
+        padding: 5px 15px;
+        transition: all 0.3s ease-in-out;
+        font-size: 10px;
+        letter-spacing: 1px;
+        /* display: none; */
+      }
+      #search {
+        padding: 7px;
+        width: 115%;
+        border: none;
+        background-color: rgb(236, 236, 236);
+        display: none;
+      }
+}

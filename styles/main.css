@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -46,7 +48,6 @@ body {
 }
 .white-left-menu a {
   color: rgb(0, 0, 0);
-  text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 15px;
@@ -54,7 +55,6 @@ body {
 }
 .white-right-menu a {
   color: rgb(0, 0, 0);
-  text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 15px;
@@ -66,7 +66,6 @@ body {
 }
 .black-right-menu li a {
   color: white;
-  text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 13px;
@@ -74,7 +73,6 @@ body {
 }
 .black-left-menu li {
   color: white;
-  text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 13px;
@@ -86,7 +84,6 @@ li:hover {
 }
 .white-left-menu li {
   color: black;
-  text-decoration: none;
   padding: 5px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 14px;
@@ -94,15 +91,14 @@ li:hover {
 }
 .white-right-menu li {
   color: black;
-  text-decoration: none;
   padding: 5px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 14px;
   letter-spacing: 2px;
 }
 #search {
-  padding: 7px 7px;
-  width: 360px;
+  padding: 7px;
+  width: 115%;
   border: none;
   background-color: rgb(236, 236, 236);
 }

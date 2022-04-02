@@ -27,7 +27,7 @@ function nav() {
                     <a href="/index.html"><img src="resources/max.png" alt="max-logo" /></a>
                 </li>
                 <li><a href="/womens.html">Women</a></li>
-                <li><a href="/men.html">Men</a></li>
+                <li><a href="/new_men.html">Men</a></li>
                 <li></li>
                 <li><a href="#">Girls</a></li>
                 <li><a href="#">Boys</a></li>

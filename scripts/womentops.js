@@ -1,6 +1,6 @@
+    /// Womens all top and tees products appended by this file. ///
 
-
- let url = `http://localhost:5000/products`;
+ let url = `http://localhost:5000/womens`;
 
  async function FetchApi() {
  
@@ -43,14 +43,14 @@
 // sub_category: "Tops "
 // _id: "6244480900b2438e325e2d23"
 
-function displayData(women_kurti){
+function displayData(women_top){
 
   //appending the product image to the container element.
 let container = document.getElementById("product_append");
 container.innerHTML = null;
 
 
-women_kurti.map((data) => {
+women_top.map((data) => {
 
          
   let div = document.createElement("div");
@@ -89,7 +89,7 @@ women_kurti.map((data) => {
   basket.textContent = "ADD TO BASKET";
   basket.addEventListener("click", function() {
      //adding eventlisterner to "Add to cart button"
-    addtoCart(data)
+    addtoCart(data);
 })
 
       
@@ -106,7 +106,7 @@ women_kurti.map((data) => {
 
   div.onclick = () => {
     localStorage.setItem("id", (data._id));
-    window.location.href = "singleproduct.html";
+    window.location.href = "singlewomentop.html";
   };
 
      container.append(div2);

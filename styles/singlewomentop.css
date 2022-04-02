@@ -9,6 +9,7 @@
     font-size: 28px;
     font-weight: bold;
     line-height: 30px;
+    /* color:black; */
   }
   #img {
   
@@ -74,4 +75,27 @@
   #main_container{
     margin-top: 50px;
     padding: 100px;
+  }
+
+  #overview{
+    margin-left: 20px;
+  }
+
+  #overview_title{
+    font-weight: bold;
+  }
+
+  #color{
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    
+  }
+
+  #overview_text{
+    
+  }
+
+  #colorText{
+    font-weight: bold;
   }

@@ -45,12 +45,16 @@ function appendprod(el) {
 
     let p_div = document.createElement("div");
     p_div.setAttribute("id", "p_div");
+
     let price = document.createElement("h4");
     price.innerHTML = `&#x20B9 ${el.price}/-`;
     price.setAttribute("id", "price");
+
     let ptag = document.createElement("p");
     ptag.setAttribute("id", "ptag");
+
     ptag.innerText = "inclusive all taxes";
+
     p_div.append(price, ptag);
 
     ////////////////////////////////////////////
@@ -83,6 +87,19 @@ function appendprod(el) {
 
     size.append(size_text, s, m, l, xl, xxl);
     ////////////////////////////////////////////////////////////////
+ 
+    /// Colour of the dress
+    let color=document.createElement("div");
+    color.id="color";
+
+    let color_title=document.createElement("p");
+    color_title.innerText=`Color-->`;
+
+    let color_text=document.createElement("p");
+    color_text.id="colorText"
+    color_text.innerHTML=`${el.color}`;
+
+    color.append(color_title, color_text);
 
     // Add to basket button.
     let basket = document.createElement("button");
@@ -93,6 +110,7 @@ function appendprod(el) {
       addtoCart(el);
     });
 
+    // Add to Favourites button.
     let favourite = document.createElement("button");
     favourite.innerHTML = `&#10084 Add to Favourites`;
     favourite.setAttribute("id", "favourite");
@@ -100,6 +118,7 @@ function appendprod(el) {
       addtoWishlist(el);
     });
 
+    // promotion information
     let promotion = document.createElement("button");
     promotion.setAttribute("id", "promotion");
     promotion.innerHTML = "PROMOTION OFFER";
@@ -109,7 +128,22 @@ function appendprod(el) {
     promo_text.innerText =
       "Get Rs.200 Off on 1999 & above orders, code- MAX200 | Rs. 100 Off on 999 & above (First Purchase Only), code- NEW100";
 
-    price_details.append(p_div, size, basket, favourite, promotion, promo_text);
+
+      let overview= document.createElement("div");
+      overview.id="overview";
+
+      let overview_title = document.createElement("p");
+      overview_title.innerText="Overview";
+      overview_title.id="overview_title";
+    
+
+      let overview_text= document.createElement("p");
+      // overview_text.id="overview_text";
+      overview_text.innerText=el.overview;
+
+      overview.append(overview_title,overview_text);
+      // append all the price_details.
+    price_details.append(p_div, size,color, basket,  favourite, promotion, promo_text,overview);
 
     cont_div.append(image, price_details);
 

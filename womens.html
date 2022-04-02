@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,14 +28,12 @@
 
     <!-- main container div  -->
     <div id="container">
-
       <!--Show Slideshow here-->
       <div id="slideshow">
         <img src="" id="imgSlide" alt="" />
       </div>
 
       <hr />
-
 
       <!-- catagory list  -->
       <div id="catogary_container">
@@ -40,7 +43,7 @@
         <div id="content">
           <div>
             <div class="wcat" onclick="window.location.href='women_kurti.html'">
-              <img 
+              <img
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-5-Desktop-Women-14Feb2022.jpg"
               />
               <p>Kurtis and kurtas</p>
@@ -144,19 +147,20 @@
         </div>
       </div>
 
-
       <!-- offer banner  -->
       <div id="offer">
         <img
           src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-A-Men-18Feb2022.jpg"
         />
       </div>
-  
+
       <hr />
       <div id="gift">
         <h3>Gift for her</h3>
-        <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-A-Men-24Feb2022.jpg" 
-          alt="" />
+        <img
+          src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-A-Men-24Feb2022.jpg"
+          alt=""
+        />
       </div>
     </div>
 
@@ -164,7 +168,6 @@
     <div id="footer_container"></div>
   </body>
 </html>
-
 
 <script src="/data/womensData.js"></script>
 <script src="/scripts/women_kurti.js"></script>
@@ -174,6 +177,16 @@
   import nav from "./components/navbar.js";
   let nav_container = document.getElementById("nav_container");
   nav_container.innerHTML = nav();
+
+  //greet user
+  var uName = localStorage.getItem("userName");
+  if (uName == null) {
+    let userName = document.getElementById("hi");
+    userName.innerText = "SignUp-SignIn";
+  } else {
+    let userName = document.getElementById("hi");
+    userName.innerText = `Hi ${uName}`;
+  }
 
   // importing footer part
   import footer from "./components/footer.js";

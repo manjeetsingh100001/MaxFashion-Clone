@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,16 +30,15 @@
       <div id="slideshow">
         <img id="headerimages" />
       </div>
-      <br>
-      <hr>
+      <br />
+      <hr />
 
       <div class="content">
         <h1 id="shopby">Shop By Category</h1>
         <div id="homepage1"></div>
-        <br>
-        <hr>
+        <br />
+        <hr />
       </div>
-     
     </div>
 
     <!-- footer  main  section (importing) -->
@@ -64,14 +68,15 @@
   import nav from "./components/navbar.js";
   let nav_container = document.getElementById("nav_container");
   nav_container.innerHTML = nav();
+
   //greet user
-  var uName = localStorage.getItem("username");
-  if(uName==null){
+  var uName = localStorage.getItem("userName");
+  if (uName == null) {
     let userName = document.getElementById("hi");
-    userName.innerText = "SignUp";
-  }else{
+    userName.innerText = "SignUp-SignIn";
+  } else {
     let userName = document.getElementById("hi");
-  userName.innerText = `Hi ${uName}`;
+    userName.innerText = `Hi ${uName}`;
   }
 
   // importing footer part

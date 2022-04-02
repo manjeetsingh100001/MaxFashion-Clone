@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,29 +23,37 @@
     <title>Mens-detail-page</title>
   </head>
   <body>
-       <!-- navbar  main  section (importing) -->
+    <!-- navbar  main  section (importing) -->
     <div id="nav_container"></div>
 
     <div>
       <div id="detail"></div>
     </div>
 
-     <!-- footer  main  section (importing) -->
-     <div id="footer_container"></div>
-
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
   </body>
 </html>
 <script src="./scripts/detailpage.js"></script>
 
 <script type="module">
-    //importing Nav-bar part
-    import nav from "./components/navbar.js";
-    let nav_container = document.getElementById("nav_container");
-    nav_container.innerHTML = nav();
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
 
-  
-    // importing footer part
-    import footer from "./components/footer.js";
-    let footer_container = document.getElementById("footer_container");
-    footer_container.innerHTML = footer();
-  </script>
+  //greet user
+  var uName = localStorage.getItem("userName");
+  if (uName == null) {
+    let userName = document.getElementById("hi");
+    userName.innerText = "SignUp-SignIn";
+  } else {
+    let userName = document.getElementById("hi");
+    userName.innerText = `Hi ${uName}`;
+  }
+
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
+</script>

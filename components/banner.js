@@ -1,6 +1,6 @@
 function banner(){
     return `<div id="main-banner-container">
-    <div class="flex">
+    <div class="flexi">
 
       <a href="/womens.html"><div class="text-container" > 
         <img src="/resources/women.jpg" alt="women-banner" />

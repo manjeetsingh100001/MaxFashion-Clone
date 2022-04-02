@@ -2,7 +2,7 @@ function footer(){
     return `<footer>
     <div id="footerContainer ">
       <hr />
-      <div id="subscription-container flex">
+      <div id="subscription-container">
         <div>
           <h2>Subscribe to our awesome emails.</h2>
           <p>Get our latest offers and news straight in your inbox.</p>

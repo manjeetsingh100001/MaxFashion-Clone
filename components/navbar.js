@@ -1,7 +1,7 @@
 function nav() {
     return ` 
     <nav class="nav">
-        <div class="black-container flex">
+        <div class="black-container">
             <!-- for black band menu  -->
             <ul class="black-left-menu flex">
                 <li><i class="fas fa-truck"></i> Fast Shipping</li>
@@ -21,7 +21,7 @@ function nav() {
             </ul>
         </div>
 
-        <div class="white-container flex">
+        <div class="white-container ">
             <ul class="white-left-menu flex">
                 <li>
                     <a href="/index.html"><img src="resources/max.png" alt="max-logo" /></a>

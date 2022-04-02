@@ -10,50 +10,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/498dbb26da.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/product.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="/styles/singlewomentop.css" />
     <title>Top & Tees</title>
   </head>
-
   <body>
     <!-- navbar  main  section (importing) -->
     <div id="nav_container"></div>
 
     <div id="main_container">
-      <p>
-        <span>Home <i class="fas fa-arrow-right"></i></span>
-        <span>Women <i class="fas fa-arrow-right"></i></span>
-        <span> Indian Wear<i class="fas fa-arrow-right"></i></span>
-        <span> Kurtas & Kurtis <i class="fas fa-arrow-right"></i></span>
-      </p>
-      <h1>Top & Tees</h1>
-
-      <div id="sorting_and_filter_Div">
-        <select id="sortPriced" onchange="sortbyprice()">
-          <option value="">Sort by Price</option>
-          <!-- <option value="default">Default</option> -->
-          <option value="Low">Low to High</option>
-          <option value="High">High to Low</option>
-        </select>
-      </div>
-
-      <div id="product_append"></div>
+      <h2>Top & Tees</h2>
+      <div id="parent"></div>
     </div>
 
     <!-- footer  main  section (importing) -->
     <div id="footer_container"></div>
   </body>
 </html>
-<!-- <script src="./data/womensData.js"></script> -->
-<script src="./scripts/product.js"></script>
 
 <script type="module">
   //importing Nav-bar part
@@ -76,3 +49,5 @@
   let footer_container = document.getElementById("footer_container");
   footer_container.innerHTML = footer();
 </script>
+
+<script src="./scripts/SinglemenShirt.js"></script>

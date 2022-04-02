@@ -27,7 +27,9 @@ function sortbyprices() {
   }
   displayData(data);
   console.log("men_tees:", data);
-}
+};
+
+
 function displayData(data) {
   let maincontainer = document.querySelector("#zeus");
   maincontainer.innerHTML = "";
@@ -69,7 +71,9 @@ function displayData(data) {
     alert(data.name + "  " + "Added");
     localStorage.setItem("CartItems", JSON.stringify(cartArr));
   }
-}
+};
+
+
 // single page data passing
 function detail(elem) {
   detailarr = [];

@@ -4,10 +4,12 @@ MaxFashion is a ecommerce website,this is a frontend of maxFashion-clone . With 
 *Features of the Project*
 - Sign-in/Sign-up  using google auth
 - landing page 
-- -Cart and product page
--Women and Men Category page
--Added sorting feature based on price
--Checkout page
+- Cart and product page
+- Checkout page
+- Women and Men Category page
+- Added sorting feature based on price
+
+
 
 Tech Stack: HTML || CSS || JavaScript
 Group-Members:6

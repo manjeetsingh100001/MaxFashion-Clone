@@ -1,6 +1,7 @@
 # MaxFashion-Clone
 MaxFashion is a ecommerce website,this is a frontend of maxFashion-clone . With HTML, CSS ,javascript
 
+*Features of the Project*
 - Sign-in/Sign-up  using google auth
 - landing page
 -Cart and product page

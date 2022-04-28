@@ -7,6 +7,7 @@ MaxFashion is a ecommerce website,this is a frontend of maxFashion-clone . With 
 - Cart and product page
 - Checkout page
 - Women and Men Category page
+- Fetching Data from Rest Api
 - Added sorting feature based on price
 
 
